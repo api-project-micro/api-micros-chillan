@@ -2,11 +2,11 @@
     "ciudad": "Chillán",
     "origen": "Maipón esq. Mercado De Chillán",
     "destino": "Salidas en Tiempo Real (En Vivo)",
-    "actualizado_en": "2026-09-11 12:55 hrs",
+    "actualizado_en": "2026-09-11 13:02 hrs",
     "rutas": [
         {
-            "detalle": "3 - Maipon esq. Mercado De Chillan Baquedano 6 Islas del Sur 9:56 a.m. 4V1 Iansa - Frusur 9:56 a.m. 8 Del Rosario esquina Angel Parra 9:56 a.m. 2 Población Santa Elvira 9:57 a.m. 4 Iansa - Frusur 9:57 a.m. 10 Villa Barcelona 9:59 a.m. 7 Camino Parque Lantaño 10:01 a.m. 14 Lord Cochrane esquina Zañartu 10:01 a.m. 1 Huape 10:02 a.m. Baquedano 10:03 a.m. 6 Islas del Sur 10:03 a.m. 2 Población Santa Elvira 10:05 a.m. 8 Del Rosario esquina Angel Parra 10:05 a.m. 10 Villa Barcelona 10:05 a.m. 4 Iansa - Frusur 10:06 a.m. 7 Camino Parque Lantaño 10:08 a.m. 14 Lord Cochrane esquina Zañartu 10:10 a.m. Baquedano 10:10 a.m. 6 Islas del Sur 10:11 a.m. 10 Villa Barcelona 10:11 a.m. 2 Población Santa Elvira 10:12 a.m. 1 Huape 10:12 a.m. 8 Del Rosario esquina Angel Parra 10:13 a.m. 4 Iansa - Frusur 10:14 a.m.",
-            "hora": "9:55 a.m.",
+            "detalle": "1 - Maipon esq. Mercado De Chillan Huape 3 Baquedano 10:03 a.m. 6 Islas del Sur 10:03 a.m. 2 Población Santa Elvira 10:05 a.m. 8 Del Rosario esquina Angel Parra 10:05 a.m. 10 Villa Barcelona 10:05 a.m. 4 Iansa - Frusur 10:06 a.m. 7 Camino Parque Lantaño 10:08 a.m. 14 Lord Cochrane esquina Zañartu 10:10 a.m. 3 Baquedano 10:10 a.m. 6 Islas del Sur 10:11 a.m. 10 Villa Barcelona 10:11 a.m. 2 Población Santa Elvira 10:12 a.m. Huape 10:12 a.m. 8 Del Rosario esquina Angel Parra 10:13 a.m. 4 Iansa - Frusur 10:14 a.m. 7 Camino Parque Lantaño 10:16 a.m. 10 Villa Barcelona 10:17 a.m. 3 Baquedano 10:18 a.m. 14 Lord Cochrane esquina Zañartu 10:18 a.m. 6 Islas del Sur 10:18 a.m. 2 Población Santa Elvira 10:20 a.m. 8 Del Rosario esquina Angel Parra 10:22 a.m. Huape 10:22 a.m. 4 Iansa - Frusur 10:23 a.m.",
+            "hora": "10:02 a.m.",
             "empresa": "Transporte Público Chillán",
             "precio": "$500"
         }
