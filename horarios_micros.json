@@ -2,11 +2,11 @@
     "ciudad": "Chillán",
     "origen": "Maipón esq. Mercado De Chillán",
     "destino": "Salidas en Tiempo Real (En Vivo)",
-    "actualizado_en": "2026-09-12 10:33 hrs",
+    "actualizado_en": "2026-09-12 10:47 hrs",
     "rutas": [
         {
-            "detalle": "4V1 - Maipon esq. Mercado De Chillan Iansa - Frusur 14 Lord Cochrane esquina Zañartu 7:37 a.m. 10 Villa Barcelona 7:40 a.m. 7 Camino Parque Lantaño 7:42 a.m. 4 Iansa - Frusur 7:45 a.m. 2V1 Población Santa Elvira 7:48 a.m. 8 Del Rosario esquina Angel Parra 7:50 a.m. 7 Camino Parque Lantaño 7:52 a.m. 14 Lord Cochrane esquina Zañartu 7:54 a.m. 10 Villa Barcelona 7:56 a.m. Iansa - Frusur 7:57 a.m. 4 Iansa - Frusur 7:59 a.m. 7 Camino Parque Lantaño 8:02 a.m. 2V1 Población Santa Elvira 8:03 a.m. 4 Iansa - Frusur 8:05 a.m. 14 Lord Cochrane esquina Zañartu 8:07 a.m. 10 Villa Barcelona 8:08 a.m. 8 Del Rosario esquina Angel Parra 8:10 a.m. 7 Camino Parque Lantaño 8:13 a.m. 2V1 Población Santa Elvira 8:18 a.m. 10 Villa Barcelona 8:20 a.m. 4 Iansa - Frusur 8:20 a.m. 7 Camino Parque Lantaño 8:21 a.m. 1 Huape 8:22 a.m. 3 Baquedano 8:25 a.m.",
-            "hora": "7:36 a.m.",
+            "detalle": "2V1 - Maipon esq. Mercado De Chillan Población Santa Elvira 7 Camino Parque Lantaño 7:50 a.m. 14 Lord Cochrane esquina Zañartu 7:53 a.m. 10 Villa Barcelona 7:53 a.m. 4 Iansa - Frusur 7:56 a.m. 8 Del Rosario esquina Angel Parra 8:02 a.m. 7 Camino Parque Lantaño 8:02 a.m. Población Santa Elvira 8:03 a.m. 4 Iansa - Frusur 8:05 a.m. 10 Villa Barcelona 8:07 a.m. 14 Lord Cochrane esquina Zañartu 8:07 a.m. 7 Camino Parque Lantaño 8:11 a.m. 4V1 Iansa - Frusur 8:11 a.m. 8 Del Rosario esquina Angel Parra 8:12 a.m. Población Santa Elvira 8:18 a.m. 10 Villa Barcelona 8:19 a.m. 4 Iansa - Frusur 8:20 a.m. 7 Camino Parque Lantaño 8:21 a.m. 1 Huape 8:22 a.m. 3 Baquedano 8:25 a.m. 14 Lord Cochrane esquina Zañartu 8:27 a.m. 4V1 Iansa - Frusur 8:27 a.m. 8 Del Rosario esquina Angel Parra 8:30 a.m. 7 Camino Parque Lantaño 8:31 a.m. 10 Villa Barcelona 8:32 a.m.",
+            "hora": "7:48 a.m.",
             "empresa": "Transporte Público Chillán",
             "precio": "$500"
         }
