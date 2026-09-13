@@ -2,11 +2,11 @@
     "ciudad": "Chillán",
     "origen": "Maipón esq. Mercado De Chillán",
     "destino": "Salidas en Tiempo Real (En Vivo)",
-    "actualizado_en": "2026-09-13 15:47 hrs",
+    "actualizado_en": "2026-09-13 16:03 hrs",
     "rutas": [
         {
-            "detalle": "6 - Maipon esq. Mercado De Chillan Islas del Sur Islas del Sur 12:52 p.m. 1 Huape 12:52 p.m. 3 Baquedano 12:55 p.m. 8 Del Rosario esquina Angel Parra 12:57 p.m. 7 Camino Parque Lantaño 12:58 p.m. 10 Villa Barcelona 12:59 p.m. 7 Camino Parque Lantaño 1:01 p.m. 4 Iansa - Frusur 1:03 p.m. 2V1 Población Santa Elvira 1:07 p.m. 14 Lord Cochrane esquina Zañartu 1:08 p.m. 7 Camino Parque Lantaño 1:13 p.m. 8 Del Rosario esquina Angel Parra 1:13 p.m. 10 Villa Barcelona 1:14 p.m. 2V1 Población Santa Elvira 1:14 p.m. 4 Iansa - Frusur 1:16 p.m. 4 Iansa - Frusur 1:20 p.m. 1 Huape 1:22 p.m. 3 Baquedano 1:23 p.m. 14 Lord Cochrane esquina Zañartu 1:26 p.m. 7 Camino Parque Lantaño 1:28 p.m. 2V1 Población Santa Elvira 1:29 p.m. Islas del Sur 1:30 p.m. 8 Del Rosario esquina Angel Parra 1:31 p.m. 10 Villa Barcelona 1:32 p.m.",
-            "hora": "12:49 p.m.",
+            "detalle": "1 - Maipon esq. Mercado De Chillan Huape 14 Lord Cochrane esquina Zañartu 4 Iansa - Frusur 2V1 Población Santa Elvira 1:07 p.m. 6 Islas del Sur 1:11 p.m. 7 Camino Parque Lantaño 1:13 p.m. 8 Del Rosario esquina Angel Parra 1:13 p.m. 10 Villa Barcelona 1:14 p.m. 2V1 Población Santa Elvira 1:14 p.m. 3 Baquedano 1:15 p.m. 4 Iansa - Frusur 1:16 p.m. 7 Camino Parque Lantaño 1:16 p.m. 4 Iansa - Frusur 1:20 p.m. 14 Lord Cochrane esquina Zañartu 1:26 p.m. 8 Del Rosario esquina Angel Parra 1:27 p.m. 2V1 Población Santa Elvira 1:28 p.m. 10 Villa Barcelona 1:30 p.m. 4 Iansa - Frusur 1:35 p.m. 3 Baquedano 1:43 p.m. 8 Del Rosario esquina Angel Parra 1:46 p.m. 14 Lord Cochrane esquina Zañartu 1:46 p.m. 10 Villa Barcelona 1:47 p.m. 2V1 Población Santa Elvira 1:49 p.m. 6 Islas del Sur 1:50 p.m. 4 Iansa - Frusur 1:50 p.m.",
+            "hora": "1:04 p.m.",
             "empresa": "Transporte Público Chillán",
             "precio": "$500"
         }
