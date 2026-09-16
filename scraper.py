@@ -25,13 +25,14 @@ def extraer_todos_los_paraderos():
             extra_http_headers={"Accept-Language": "es-CL,es;q=0.9"}
         )
         
-        # Ocultar la propiedad navigator.webdriver para evitar detección de bot
+        # Ocultar propiedad navigator.webdriver
         context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         
         page = context.new_page()
         
-        url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs+en+Chill%C3%A1n"
-        print("Conectando a Google Maps para buscar paradas en Chillán...")
+        # URL exacta proporcionada
+        url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs/@-36.6004151,-72.0997396,18z?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D"
+        print("Conectando a Google Maps con el enlace directo de paraderos...")
         
         paraderos_totales = []
         patron_hora = re.compile(r'\b\d{1,2}:\d{2}(?:\s?[aApP]\.?\s?[mM]\.?)?\b')
@@ -39,11 +40,10 @@ def extraer_todos_los_paraderos():
         try:
             page.goto(url, wait_until="networkidle", timeout=60000)
             
-            # Espera extendida para lidiar con la verificación inicial de Google
             try:
                 page.wait_for_selector("a.hfpxzc", state="visible", timeout=25000)
             except TimeoutError:
-                print("Google Maps bloqueó o demoró demasiado en mostrar los resultados iniciales.")
+                print("No se pudieron cargar los resultados iniciales de paraderos.")
                 return
             
             resultados_paradas = page.locator("a.hfpxzc").all()
@@ -75,7 +75,7 @@ def extraer_todos_los_paraderos():
                         
                         page.wait_for_selector("div.iP2t7d, div.n5vinf, div.Fkgn4d", timeout=12000)
                         
-                        print("Haciendo scroll en el panel para cargar más micros...")
+                        print("Haciendo scroll en el panel para cargar más rutas...")
                         for _ in range(4):
                             filas_actuales = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d").all()
                             if filas_actuales:
@@ -162,12 +162,12 @@ def extraer_todos_los_paraderos():
                     try:
                         page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                     except TimeoutError:
-                        print("La lista no cargó tras ir atrás. Recargando búsqueda...")
+                        print("Recargando la vista principal de paradas...")
                         page.goto(url, wait_until="networkidle")
                         page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                         
                 except Exception as inner_ex:
-                    print(f"Error procesando paradero '{nombre_paradero}': {inner_ex}")
+                    print(f"Error procesando paradero: {inner_ex}")
                     page.goto(url, wait_until="networkidle")
                     page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                     continue
