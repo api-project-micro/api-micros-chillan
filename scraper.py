@@ -25,24 +25,18 @@ def extraer_todos_los_paraderos():
             extra_http_headers={"Accept-Language": "es-CL,es;q=0.9"}
         )
         
-        # Ocultar propiedad navigator.webdriver
         context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-        
         page = context.new_page()
         
-        # URL exacta con coordenadas
         url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs/@-36.6004151,-72.0997396,18z?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D"
-        print("Conectando a Google Maps con el enlace directo de paraderos...")
+        print("Conectando a Google Maps...")
         
         paraderos_totales = []
         patron_hora = re.compile(r'\b\d{1,2}:\d{2}(?:\s?[aApP]\.?\s?[mM]\.?)?\b')
         
         try:
-            # Usamos domcontentloaded para evitar el timeout infinito de Google Maps
             page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            
-            # Pausa de 5 segundos para asegurar que la interfaz lateral cargue por completo
-            page.wait_for_timeout(5000)
+            page.wait_for_timeout(4000)
             
             try:
                 page.wait_for_selector("a.hfpxzc", state="visible", timeout=25000)
@@ -69,90 +63,81 @@ def extraer_todos_los_paraderos():
                     
                     paradero_link.scroll_into_view_if_needed()
                     paradero_link.click()
+                    page.wait_for_timeout(3000)
                     
-                    btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas')").first
                     horarios_paradero = []
                     
-                    try:
-                        btn_salidas.wait_for(state="visible", timeout=10000)
-                        btn_salidas.click()
-                        
-                        page.wait_for_selector("div.iP2t7d, div.n5vinf, div.Fkgn4d", timeout=12000)
-                        
-                        print("Haciendo scroll en el panel para cargar más rutas...")
-                        for _ in range(4):
-                            filas_actuales = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d").all()
-                            if filas_actuales:
-                                try:
-                                    filas_actuales[-1].scroll_into_view_if_needed()
-                                    page.wait_for_timeout(1000)
-                                except:
-                                    break
-                        
-                        filas = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d").all()
-                        
-                        for fila in filas:
-                            try:
-                                texto_fila = fila.inner_text().strip()
-                                if not texto_fila:
-                                    continue
-                                
-                                lineas = [l.strip() for l in texto_fila.split("\n") if l.strip()]
-                                hora_encontrada = None
-                                es_manana = False
-                                
-                                for l in lineas:
-                                    if "mañana" in l.lower():
-                                        es_manana = True
-                                        
-                                    match = patron_hora.search(l)
-                                    if match:
-                                        hora_encontrada = match.group(0)
-                                        if "mañana" in l.lower():
-                                            es_manana = True
-                                        break
-                                        
-                                if not hora_encontrada:
-                                    continue
-                                    
-                                if es_manana:
-                                    hora_encontrada = f"Mañana {hora_encontrada}"
-                                
-                                numero_micro = ""
-                                try:
-                                    badge = fila.locator("span.SJ4nDcl, span[class*='SJ4nD']").first
-                                    if badge.is_visible(timeout=500):
-                                        numero_micro = badge.inner_text().strip()
-                                except:
-                                    pass
-                                    
-                                if not numero_micro and len(lineas) > 0:
-                                    posible = lineas[0]
-                                    if len(posible) <= 4 and posible.isalnum():
-                                        numero_micro = posible
-                                        
-                                textos_limpios = []
-                                palabras_ignoradas = ["restaurantes", "hoteles", "farmacias", "cajeros", "google"]
-                                for l in lineas:
-                                    if "mañana" not in l.lower() and l != hora_encontrada and l != numero_micro:
-                                        if not any(r in l.lower() for r in palabras_ignoradas):
-                                            textos_limpios.append(l)
-                                
-                                destino = " ".join(textos_limpios) if textos_limpios else "Centro"
-                                detalle_final = f"{numero_micro} - {destino}" if numero_micro and not destino.startswith(numero_micro) else destino
-                                
-                                if len(detalle_final) > 2:
-                                    item = {
-                                        "detalle": detalle_final,
-                                        "hora": hora_encontrada
-                                    }
-                                    if item not in horarios_paradero:
-                                        horarios_paradero.append(item)
-                            except Exception:
+                    # 1. Intentar hacer clic en el botón 'Ver el panel de salidas'
+                    btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas'), [aria-label*='panel de salidas']").first
+                    if btn_salidas.is_visible(timeout=3000):
+                        try:
+                            btn_salidas.click()
+                            page.wait_for_timeout(3000)
+                        except Exception:
+                            pass
+                    
+                    # 2. Hacer scroll en la ficha lateral
+                    panel_lateral = page.locator("div[role='main']").first
+                    if panel_lateral.is_visible():
+                        for _ in range(2):
+                            panel_lateral.mouse_wheel(0, 300)
+                            page.wait_for_timeout(500)
+                    
+                    # 3. Intentar extraer horarios del panel de salidas si está disponible
+                    filas = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d, div.M75A3b, div[role='listitem']").all()
+                    for fila in filas:
+                        try:
+                            texto_fila = fila.inner_text().strip()
+                            if not texto_fila:
                                 continue
-                                
-                    except TimeoutError:
-                        print(f"No se encontró panel de salidas para: {nombre_paradero}")
+                            
+                            lineas = [l.strip() for l in texto_fila.split("\n") if l.strip()]
+                            hora_encontrada = None
+                            
+                            for l in lineas:
+                                match = patron_hora.search(l)
+                                if match:
+                                    hora_encontrada = match.group(0)
+                                    break
+                            
+                            if hora_encontrada:
+                                textos_limpios = [l for l in lineas if l != hora_encontrada]
+                                detalle_final = " - ".join(textos_limpios) if textos_limpios else "Recorrido urbano"
+                                item = {"detalle": detalle_final, "hora": hora_encontrada}
+                                if item not in horarios_paradero:
+                                    horarios_paradero.append(item)
+                        except Exception:
+                            continue
+                    
+                    # 4. Fallback: Si no hay horarios dinámicos, extraer los distintivos/números de micro (ej: badge '10' bajo Autobuses)
+                    if not horarios_paradero and panel_lateral.is_visible():
+                        texto_panel = panel_lateral.inner_text()
+                        
+                        # Buscar los botones/badges con los números de las micros
+                        badges = page.locator("div:has-text('Autobuses') ~ div button, div:has-text('Autobuses') ~ div span").all()
+                        lineas_detectadas = []
+                        for b in badges:
+                            txt = b.inner_text().strip()
+                            if txt.isdigit() and len(txt) <= 4 and txt not in lineas_detectadas:
+                                lineas_detectadas.append(txt)
+                        
+                        if lineas_detectadas:
+                            for linea_num in lineas_detectadas:
+                                horarios_paradero.append({
+                                    "detalle": f"Línea {linea_num}",
+                                    "hora": "Frecuencia regular"
+                                })
+                        elif "Autobuses" in texto_panel:
+                            lineas_texto = [l.strip() for l in texto_panel.split("\n") if l.strip()]
+                            for idx, l in enumerate(lineas_texto):
+                                if l == "Autobuses" and idx + 1 < len(lineas_texto):
+                                    lineas_detectadas.append(lineas_texto[idx + 1])
+                                    horarios_paradero.append({
+                                        "detalle": f"Línea {lineas_texto[idx + 1]}",
+                                        "hora": "Frecuencia regular"
+                                    })
+
+                    print(f"Rutas/Horarios capturados para {nombre_paradero}: {len(horarios_paradero)}")
                     
                     paraderos_totales.append({
                         "id": f"paradero_{i + 1}",
@@ -160,20 +145,19 @@ def extraer_todos_los_paraderos():
                         "rutas": horarios_paradero
                     })
                     
-                    print("Volviendo a la lista principal...")
-                    page.go_back()
+                    # Volver a la lista principal
+                    btn_atras = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
+                    if btn_atras.is_visible(timeout=2000):
+                        btn_atras.click()
+                    else:
+                        page.go_back()
                     
-                    try:
-                        page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
-                    except TimeoutError:
-                        print("Recargando la vista principal de paradas...")
-                        page.goto(url, wait_until="domcontentloaded")
-                        page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
-                        
+                    page.wait_for_timeout(2000)
+                    
                 except Exception as inner_ex:
                     print(f"Error procesando paradero: {inner_ex}")
                     page.goto(url, wait_until="domcontentloaded")
-                    page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
+                    page.wait_for_timeout(3000)
                     continue
 
         except Exception as e:
