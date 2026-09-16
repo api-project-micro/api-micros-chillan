@@ -12,46 +12,49 @@ def extraer_todos_los_paraderos():
                 "--no-sandbox",
                 "--disable-setuid-sandbox",
                 "--disable-dev-shm-usage",
-                "--lang=es-CL"  # Forzar español Chile
+                "--disable-infobars",
+                "--window-size=1280,720",
+                "--lang=es-CL"
             ]
         )
         
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
             locale="es-CL",
-            viewport={"width": 1280, "height": 720}
+            viewport={"width": 1280, "height": 720},
+            extra_http_headers={"Accept-Language": "es-CL,es;q=0.9"}
         )
+        
+        # Ocultar la propiedad navigator.webdriver para evitar detección de bot
+        context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        
         page = context.new_page()
         
         url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs+en+Chill%C3%A1n"
         print("Conectando a Google Maps para buscar paradas en Chillán...")
         
         paraderos_totales = []
-        
-        # Expresión regular para capturar horas (ej: "14:30", "07:30 p.m.")
         patron_hora = re.compile(r'\b\d{1,2}:\d{2}(?:\s?[aApP]\.?\s?[mM]\.?)?\b')
         
         try:
-            page.goto(url, wait_until="domcontentloaded", timeout=40000)
+            page.goto(url, wait_until="networkidle", timeout=60000)
             
-            # Espera dinámica para que cargue la lista izquierda de resultados
+            # Espera extendida para lidiar con la verificación inicial de Google
             try:
-                page.wait_for_selector("a.hfpxzc", state="visible", timeout=15000)
+                page.wait_for_selector("a.hfpxzc", state="visible", timeout=25000)
             except TimeoutError:
-                print("No se pudieron cargar los resultados iniciales.")
+                print("Google Maps bloqueó o demoró demasiado en mostrar los resultados iniciales.")
                 return
             
             resultados_paradas = page.locator("a.hfpxzc").all()
             print(f"=== PARADAS DETECTADAS: {len(resultados_paradas)} ===")
             
-            # Limitamos para pruebas (ej. primeros 5 paraderos)
             max_paraderos = min(len(resultados_paradas), 5)
             
             for i in range(max_paraderos):
                 try:
                     print(f"\n--- Procesando paradero {i + 1} de {max_paraderos} ---")
                     
-                    # Recargar la lista de elementos para evitar el error "Stale Element"
                     resultados = page.locator("a.hfpxzc").all()
                     if i >= len(resultados):
                         break
@@ -60,24 +63,18 @@ def extraer_todos_los_paraderos():
                     nombre_paradero = paradero_link.get_attribute("aria-label") or f"Paradero {i + 1}"
                     print(f"Nombre obtenido: {nombre_paradero}")
                     
-                    # Hacemos scroll al elemento y hacemos clic
                     paradero_link.scroll_into_view_if_needed()
                     paradero_link.click()
                     
-                    # Buscar el botón de salidas usando espera dinámica
                     btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas')").first
-                    
                     horarios_paradero = []
                     
                     try:
-                        # Esperamos hasta 8 segundos a que aparezca el botón del panel
-                        btn_salidas.wait_for(state="visible", timeout=8000)
+                        btn_salidas.wait_for(state="visible", timeout=10000)
                         btn_salidas.click()
                         
-                        # Esperamos a que el panel cargue los datos (usando clases específicas)
-                        page.wait_for_selector("div.iP2t7d, div.n5vinf, div.Fkgn4d", timeout=10000)
+                        page.wait_for_selector("div.iP2t7d, div.n5vinf, div.Fkgn4d", timeout=12000)
                         
-                        # --- Hacemos Scroll en el panel de este paradero ---
                         print("Haciendo scroll en el panel para cargar más micros...")
                         for _ in range(4):
                             filas_actuales = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d").all()
@@ -88,7 +85,6 @@ def extraer_todos_los_paraderos():
                                 except:
                                     break
                         
-                        # --- Extracción de datos con Regex, filtros y detección de "Mañana" ---
                         filas = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d").all()
                         
                         for fila in filas:
@@ -98,7 +94,6 @@ def extraer_todos_los_paraderos():
                                     continue
                                 
                                 lineas = [l.strip() for l in texto_fila.split("\n") if l.strip()]
-                                
                                 hora_encontrada = None
                                 es_manana = False
                                 
@@ -116,7 +111,6 @@ def extraer_todos_los_paraderos():
                                 if not hora_encontrada:
                                     continue
                                     
-                                # Si pertenece al día de mañana, anteponemos la etiqueta
                                 if es_manana:
                                     hora_encontrada = f"Mañana {hora_encontrada}"
                                 
@@ -156,14 +150,12 @@ def extraer_todos_los_paraderos():
                     except TimeoutError:
                         print(f"No se encontró panel de salidas para: {nombre_paradero}")
                     
-                    # Guardamos la info del paradero
                     paraderos_totales.append({
                         "id": f"paradero_{i + 1}",
                         "nombre": nombre_paradero,
                         "rutas": horarios_paradero
                     })
                     
-                    # Volver atrás a la lista de resultados
                     print("Volviendo a la lista principal...")
                     page.go_back()
                     
@@ -171,12 +163,12 @@ def extraer_todos_los_paraderos():
                         page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                     except TimeoutError:
                         print("La lista no cargó tras ir atrás. Recargando búsqueda...")
-                        page.goto(url, wait_until="domcontentloaded")
+                        page.goto(url, wait_until="networkidle")
                         page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                         
                 except Exception as inner_ex:
                     print(f"Error procesando paradero '{nombre_paradero}': {inner_ex}")
-                    page.goto(url, wait_until="domcontentloaded")
+                    page.goto(url, wait_until="networkidle")
                     page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                     continue
 
