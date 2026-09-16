@@ -88,7 +88,7 @@ def extraer_todos_los_paraderos():
                                 except:
                                     break
                         
-                        # --- MEJORA: Extracción de datos con Regex y filtros ---
+                        # --- MEJORA: Extracción de datos con Regex, filtros y detección de "Mañana" ---
                         filas = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d, div[jsaction]").all()
                         
                         for fila in filas:
@@ -100,15 +100,26 @@ def extraer_todos_los_paraderos():
                                 lineas = [l.strip() for l in texto_fila.split("\n") if l.strip()]
                                 
                                 hora_encontrada = None
+                                es_manana = False
+                                
                                 for l in lineas:
+                                    if "mañana" in l.lower():
+                                        es_manana = True
+                                        
                                     match = patron_hora.search(l)
                                     if match:
                                         hora_encontrada = match.group(0)
+                                        if "mañana" in l.lower():
+                                            es_manana = True
                                         break
                                         
                                 if not hora_encontrada:
                                     continue
                                     
+                                # Si pertenece al día de mañana, anteponemos la etiqueta
+                                if es_manana:
+                                    hora_encontrada = f"Mañana {hora_encontrada}"
+                                
                                 numero_micro = ""
                                 try:
                                     badge = fila.locator("span.SJ4nDcl, span[class*='SJ4nD']").first
@@ -125,7 +136,8 @@ def extraer_todos_los_paraderos():
                                 textos_limpios = []
                                 palabras_ignoradas = ["restaurantes", "hoteles", "farmacias", "cajeros", "google"]
                                 for l in lineas:
-                                    if l != hora_encontrada and l != numero_micro:
+                                    # Evitamos duplicar la palabra "mañana" o la hora dentro del texto de destino
+                                    if "mañana" not in l.lower() and l != hora_encontrada and l != numero_micro:
                                         if not any(r in l.lower() for r in palabras_ignoradas):
                                             textos_limpios.append(l)
                                 
@@ -145,7 +157,7 @@ def extraer_todos_los_paraderos():
                     except TimeoutError:
                         print(f"No se encontró panel de salidas para: {nombre_paradero}")
                     
-                    # Guardamos la info del paradero (incluso si está vacío, así sabemos que lo revisamos)
+                    # Guardamos la info del paradero
                     paraderos_totales.append({
                         "id": f"paradero_{i + 1}",
                         "nombre": nombre_paradero,
@@ -156,18 +168,15 @@ def extraer_todos_los_paraderos():
                     print("Volviendo a la lista principal...")
                     page.go_back()
                     
-                    # Espera dinámica: en lugar de esperar 3 seg fijos, esperamos a que la lista vuelva a ser visible
                     try:
                         page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                     except TimeoutError:
-                        # Si el navegador se pierde, forzamos recargar la URL original
                         print("La lista no cargó tras ir atrás. Recargando búsqueda...")
                         page.goto(url, wait_until="domcontentloaded")
                         page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                         
                 except Exception as inner_ex:
                     print(f"Error procesando paradero '{nombre_paradero}': {inner_ex}")
-                    # Intento de recuperación si ocurre un error fatal en ese paradero
                     page.goto(url, wait_until="domcontentloaded")
                     page.wait_for_selector("a.hfpxzc", state="visible", timeout=10000)
                     continue
