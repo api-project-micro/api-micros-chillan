@@ -64,7 +64,7 @@ def extraer_todos_los_paraderos():
                     paradero_link.scroll_into_view_if_needed()
                     paradero_link.click()
                     
-                    # Buscar el botón de salidas usando espera dinámica en lugar de sleep fijo
+                    # Buscar el botón de salidas usando espera dinámica
                     btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas')").first
                     
                     horarios_paradero = []
@@ -74,13 +74,13 @@ def extraer_todos_los_paraderos():
                         btn_salidas.wait_for(state="visible", timeout=8000)
                         btn_salidas.click()
                         
-                        # Esperamos a que el panel cargue los datos
-                        page.wait_for_selector("div[jsaction]", timeout=10000)
+                        # Esperamos a que el panel cargue los datos (usando clases específicas)
+                        page.wait_for_selector("div.iP2t7d, div.n5vinf, div.Fkgn4d", timeout=10000)
                         
-                        # --- MEJORA: Hacemos Scroll en el panel de este paradero ---
+                        # --- Hacemos Scroll en el panel de este paradero ---
                         print("Haciendo scroll en el panel para cargar más micros...")
                         for _ in range(4):
-                            filas_actuales = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d, div[jsaction]").all()
+                            filas_actuales = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d").all()
                             if filas_actuales:
                                 try:
                                     filas_actuales[-1].scroll_into_view_if_needed()
@@ -88,8 +88,8 @@ def extraer_todos_los_paraderos():
                                 except:
                                     break
                         
-                        # --- MEJORA: Extracción de datos con Regex, filtros y detección de "Mañana" ---
-                        filas = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d, div[jsaction]").all()
+                        # --- Extracción de datos con Regex, filtros y detección de "Mañana" ---
+                        filas = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d").all()
                         
                         for fila in filas:
                             try:
@@ -136,7 +136,6 @@ def extraer_todos_los_paraderos():
                                 textos_limpios = []
                                 palabras_ignoradas = ["restaurantes", "hoteles", "farmacias", "cajeros", "google"]
                                 for l in lineas:
-                                    # Evitamos duplicar la palabra "mañana" o la hora dentro del texto de destino
                                     if "mañana" not in l.lower() and l != hora_encontrada and l != numero_micro:
                                         if not any(r in l.lower() for r in palabras_ignoradas):
                                             textos_limpios.append(l)
