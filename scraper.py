@@ -28,7 +28,7 @@ def extraer_todos_los_paraderos():
         context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         page = context.new_page()
         
-        url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs/@-36.6004151,-72.0997396,18z?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D"
+        url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs/@-36.6004151,-72.0997396,18z?entry=ttu"
         print("Conectando a Google Maps...")
         
         paraderos_totales = []
@@ -41,146 +41,123 @@ def extraer_todos_los_paraderos():
             try:
                 page.wait_for_selector("a.hfpxzc", state="visible", timeout=25000)
             except TimeoutError:
-                print("No se pudieron cargar los resultados iniciales de paraderos.")
+                print("No se encontraron paraderos en la zona.")
                 return
             
-            resultados_paradas = page.locator("a.hfpxzc").all()
-            print(f"=== PARADAS DETECTADAS: {len(resultados_paradas)} ===")
+            # 1. Scroll en la lista general de paraderos (Nivel 1)
+            print("Cargando lista completa de paraderos...")
+            prev_count = 0
+            for _ in range(15):
+                page.evaluate("""
+                    const feed = document.querySelector('div[role="feed"]');
+                    if (feed) { feed.scrollBy(0, 1500); }
+                """)
+                page.wait_for_timeout(1000)
+                current_count = len(page.locator("a.hfpxzc").all())
+                if current_count == prev_count:
+                    break
+                prev_count = current_count
             
-            max_paraderos = min(len(resultados_paradas), 5)
+            paradas = page.locator("a.hfpxzc").all()
+            print(f"=== TOTAL DE PARADAS A PROCESAR: {len(paradas)} ===")
             
-            for i in range(max_paraderos):
+            for i in range(len(paradas)):
                 try:
-                    print(f"\n--- Procesando paradero {i + 1} de {max_paraderos} ---")
-                    
-                    resultados = page.locator("a.hfpxzc").all()
-                    if i >= len(resultados):
+                    paradas = page.locator("a.hfpxzc").all()
+                    if i >= len(paradas):
                         break
                         
-                    paradero_link = resultados[i]
+                    paradero_link = paradas[i]
                     nombre_paradero = paradero_link.get_attribute("aria-label") or f"Paradero {i + 1}"
-                    print(f"Nombre obtenido: {nombre_paradero}")
+                    print(f"\n[{i + 1}/{len(paradas)}] Entrando a: {nombre_paradero}")
                     
+                    # Clic para entrar al detalle del paradero (Nivel 2)
                     paradero_link.scroll_into_view_if_needed()
                     paradero_link.click()
-                    page.wait_for_timeout(3000)
+                    page.wait_for_timeout(2500)
                     
-                    horarios_paradero = []
+                    salidas_programadas = []
                     
-                    # 1. Intentar hacer clic en el botón 'Ver el panel de salidas'
-                    btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas'), [aria-label*='panel de salidas']").first
+                    # 2. Localizar y hacer clic en 'Ver el panel de salidas' (Nivel 2 -> Nivel 3)
+                    btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas')").first
+                    
                     if btn_salidas.is_visible(timeout=3000):
-                        try:
-                            btn_salidas.click()
-                            page.wait_for_timeout(3000)
-                        except Exception:
-                            pass
-                    
-                    # 2. Hacer scroll en la ficha lateral
-                    panel_lateral = page.locator("div[role='main']").first
-                    if panel_lateral.is_visible():
-                        for _ in range(2):
-                            panel_lateral.mouse_wheel(0, 300)
-                            page.wait_for_timeout(500)
-                    
-                    # 3. Intentar extraer horarios del panel de salidas si está disponible
-                    filas = page.locator("div.iP2t7d, div.n5vinf, div.Fkgn4d, div.M75A3b, div[role='listitem']").all()
-                    for fila in filas:
-                        try:
-                            texto_fila = fila.inner_text().strip()
-                            if not texto_fila:
-                                continue
-                            
-                            lineas = [l.strip() for l in texto_fila.split("\n") if l.strip()]
-                            hora_encontrada = None
-                            
-                            for l in lineas:
-                                match = patron_hora.search(l)
-                                if match:
-                                    hora_encontrada = match.group(0)
-                                    break
-                            
-                            if hora_encontrada:
-                                textos_limpios = [l for l in lineas if l != hora_encontrada]
-                                detalle_final = " - ".join(textos_limpios) if textos_limpios else "Recorrido urbano"
-                                item = {"detalle": detalle_final, "hora": hora_encontrada}
-                                if item not in horarios_paradero:
-                                    horarios_paradero.append(item)
-                        except Exception:
-                            continue
-                    
-                    # 4. Fallback: Si no hay horarios dinámicos, extraer los distintivos/números de micro (ej: badge '10' bajo Autobuses)
-                    if not horarios_paradero and panel_lateral.is_visible():
-                        texto_panel = panel_lateral.inner_text()
+                        print("  -> Abriendo el 'Panel de salidas'...")
+                        btn_salidas.click()
+                        page.wait_for_timeout(3000)
                         
-                        # Buscar los botones/badges con los números de las micros
-                        badges = page.locator("div:has-text('Autobuses') ~ div button, div:has-text('Autobuses') ~ div span").all()
-                        lineas_detectadas = []
-                        for b in badges:
-                            txt = b.inner_text().strip()
-                            if txt.isdigit() and len(txt) <= 4 and txt not in lineas_detectadas:
-                                lineas_detectadas.append(txt)
+                        # 3. Extraer información estructurada del Panel de Salidas (Nivel 3)
+                        texto_panel = page.locator("div[role='main']").inner_text()
+                        lineas_texto = [line.strip() for line in texto_panel.split('\n') if line.strip()]
                         
-                        if lineas_detectadas:
-                            for linea_num in lineas_detectadas:
-                                horarios_paradero.append({
-                                    "detalle": f"Línea {linea_num}",
-                                    "hora": "Frecuencia regular"
-                                })
-                        elif "Autobuses" in texto_panel:
-                            lineas_texto = [l.strip() for l in texto_panel.split("\n") if l.strip()]
-                            for idx, l in enumerate(lineas_texto):
-                                if l == "Autobuses" and idx + 1 < len(lineas_texto):
-                                    lineas_detectadas.append(lineas_texto[idx + 1])
-                                    horarios_paradero.append({
-                                        "detalle": f"Línea {lineas_texto[idx + 1]}",
-                                        "hora": "Frecuencia regular"
+                        idx = 0
+                        while idx < len(lineas_texto):
+                            item = lineas_texto[idx]
+                            # Identifica si la línea inicia con el número de micro (ej: '2' o '10')
+                            if item.isdigit() and len(item) <= 3:
+                                linea_num = item
+                                destino = lineas_texto[idx + 1] if (idx + 1 < len(lineas_texto)) else "Sin destino"
+                                
+                                # Busca la hora en las líneas adyacentes
+                                hora_encontrada = None
+                                for offset in range(2, 5):
+                                    if idx + offset < len(lineas_texto):
+                                        posible_hora = lineas_texto[idx + offset]
+                                        if patron_hora.search(posible_hora):
+                                            hora_encontrada = posible_hora
+                                            break
+                                            
+                                if hora_encontrada:
+                                    salidas_programadas.append({
+                                        "linea": f"Línea {linea_num}",
+                                        "destino": destino,
+                                        "hora": hora_encontrada
                                     })
-
-                    print(f"Rutas/Horarios capturados para {nombre_paradero}: {len(horarios_paradero)}")
-                    
+                            idx += 1
+                            
+                        print(f"     ¡Capturadas {len(salidas_programadas)} salidas programadas!")
+                        
+                        # Volver del Nivel 3 al Nivel 2
+                        btn_atras = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
+                        if btn_atras.is_visible(timeout=2000):
+                            btn_atras.click()
+                            page.wait_for_timeout(1500)
+                    else:
+                        print("  -> Este paradero no dispone de 'Panel de salidas'.")
+                        
                     paraderos_totales.append({
                         "id": f"paradero_{i + 1}",
                         "nombre": nombre_paradero,
-                        "rutas": horarios_paradero
+                        "salidas": salidas_programadas
                     })
                     
-                    # Volver a la lista principal
-                    btn_atras = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
-                    if btn_atras.is_visible(timeout=2000):
-                        btn_atras.click()
-                    else:
-                        page.go_back()
-                    
-                    page.wait_for_timeout(2000)
-                    
+                    # Volver al Nivel 1 (Lista general)
+                    btn_atras_principal = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
+                    if btn_atras_principal.is_visible(timeout=2000):
+                        btn_atras_principal.click()
+                        page.wait_for_timeout(1500)
+                        
                 except Exception as inner_ex:
-                    print(f"Error procesando paradero: {inner_ex}")
+                    print(f"Error en paradero {i + 1}: {inner_ex}")
                     page.goto(url, wait_until="domcontentloaded")
                     page.wait_for_timeout(3000)
                     continue
 
         except Exception as e:
-            print(f"Error general durante la ejecución: {e}")
-            
+            print(f"Error durante la ejecución: {e}")
         finally:
             browser.close()
-        
-        if not paraderos_totales:
-            print("⚠️ No se pudieron extraer paraderos.")
-            return
             
-        fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M hrs")
         resultado_final = {
             "ciudad": "Chillán",
-            "actualizado_en": fecha_actual,
+            "actualizado_en": datetime.now().strftime("%Y-%m-%d %H:%M hrs"),
             "paraderos": paraderos_totales
         }
         
         with open("horarios_micros.json", "w", encoding="utf-8") as f:
             json.dump(resultado_final, f, ensure_ascii=False, indent=4)
             
-        print(f"\n¡Éxito total! Se actualizaron {len(paraderos_totales)} paraderos en horarios_micros.json.")
+        print(f"\n¡Éxito! Se guardaron {len(paraderos_totales)} paraderos con sus horarios en horarios_micros.json.")
 
 if __name__ == "__main__":
     extraer_todos_los_paraderos()
