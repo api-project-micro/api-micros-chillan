@@ -44,7 +44,7 @@ def extraer_todos_los_paraderos():
                 print("No se encontraron paraderos en la zona.")
                 return
             
-            # 1. Scroll en la lista general de paraderos (Nivel 1)
+            # 1. Cargar la lista completa de paraderos con scroll (Nivel 1)
             print("Cargando lista completa de paraderos...")
             prev_count = 0
             for _ in range(15):
@@ -71,34 +71,35 @@ def extraer_todos_los_paraderos():
                     nombre_paradero = paradero_link.get_attribute("aria-label") or f"Paradero {i + 1}"
                     print(f"\n[{i + 1}/{len(paradas)}] Entrando a: {nombre_paradero}")
                     
-                    # Clic para entrar al detalle del paradero (Nivel 2)
+                    # Clic para abrir ficha de paradero (Nivel 2)
                     paradero_link.scroll_into_view_if_needed()
                     paradero_link.click()
-                    page.wait_for_timeout(2500)
+                    page.wait_for_timeout(2000)
                     
                     salidas_programadas = []
                     
-                    # 2. Localizar y hacer clic en 'Ver el panel de salidas' (Nivel 2 -> Nivel 3)
+                    # Localizar y presionar 'Ver el panel de salidas' (Nivel 2 -> Nivel 3)
                     btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas')").first
                     
                     if btn_salidas.is_visible(timeout=3000):
                         print("  -> Abriendo el 'Panel de salidas'...")
                         btn_salidas.click()
-                        page.wait_for_timeout(3000)
+                        page.wait_for_timeout(2500)
                         
-                        # 3. Extraer información estructurada del Panel de Salidas (Nivel 3)
-                        texto_panel = page.locator("div[role='main']").inner_text()
+                        # .last resuelve la violación del modo estricto apuntando al panel activo más reciente
+                        panel_activo = page.locator("div[role='main']").last
+                        texto_panel = panel_activo.inner_text()
+                        
                         lineas_texto = [line.strip() for line in texto_panel.split('\n') if line.strip()]
                         
                         idx = 0
                         while idx < len(lineas_texto):
                             item = lineas_texto[idx]
-                            # Identifica si la línea inicia con el número de micro (ej: '2' o '10')
+                            # Identifica si es el número de la micro/línea
                             if item.isdigit() and len(item) <= 3:
                                 linea_num = item
                                 destino = lineas_texto[idx + 1] if (idx + 1 < len(lineas_texto)) else "Sin destino"
                                 
-                                # Busca la hora en las líneas adyacentes
                                 hora_encontrada = None
                                 for offset in range(2, 5):
                                     if idx + offset < len(lineas_texto):
@@ -121,7 +122,7 @@ def extraer_todos_los_paraderos():
                         btn_atras = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
                         if btn_atras.is_visible(timeout=2000):
                             btn_atras.click()
-                            page.wait_for_timeout(1500)
+                            page.wait_for_timeout(1000)
                     else:
                         print("  -> Este paradero no dispone de 'Panel de salidas'.")
                         
@@ -131,20 +132,21 @@ def extraer_todos_los_paraderos():
                         "salidas": salidas_programadas
                     })
                     
-                    # Volver al Nivel 1 (Lista general)
+                    # Volver al Nivel 1 (Lista)
                     btn_atras_principal = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
                     if btn_atras_principal.is_visible(timeout=2000):
                         btn_atras_principal.click()
-                        page.wait_for_timeout(1500)
+                        page.wait_for_timeout(1000)
                         
                 except Exception as inner_ex:
                     print(f"Error en paradero {i + 1}: {inner_ex}")
-                    page.goto(url, wait_until="domcontentloaded")
-                    page.wait_for_timeout(3000)
+                    # En lugar de recargar la página, cerramos los paneles activos usando la tecla Escape o el botón 'Atrás'
+                    page.keyboard.press("Escape")
+                    page.wait_for_timeout(1500)
                     continue
 
         except Exception as e:
-            print(f"Error durante la ejecución: {e}")
+            print(f"Error general durante la ejecución: {e}")
         finally:
             browser.close()
             
