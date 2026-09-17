@@ -1,31 +1,5 @@
 {
     "ciudad": "Chillán",
-    "actualizado_en": "2026-09-16 02:45 hrs",
-    "paraderos": [
-        {
-            "id": "paradero_1",
-            "nombre": "Av. Ecuador esq. 18 de Septiembre",
-            "rutas": []
-        },
-        {
-            "id": "paradero_2",
-            "nombre": "Av. Ecuador esq. Arauco",
-            "rutas": []
-        },
-        {
-            "id": "paradero_3",
-            "nombre": "Av. Ecuador esq. Tregualemu",
-            "rutas": []
-        },
-        {
-            "id": "paradero_4",
-            "nombre": "Av. Ecuador esq. Av. O'Higgins",
-            "rutas": []
-        },
-        {
-            "id": "paradero_5",
-            "nombre": "Francia esq. Av. Ecuador",
-            "rutas": []
-        }
-    ]
+    "actualizado_en": "2026-09-17 02:17 hrs",
+    "paraderos": []
 }
