@@ -33,6 +33,8 @@ def extraer_todos_los_paraderos():
         
         paraderos_totales = []
         patron_hora = re.compile(r'\b\d{1,2}:\d{2}(?:\s?[aApP]\.?\s?[mM]\.?)?\b')
+        # Regex para aceptar números solos o con letras (ej. 10, 13BV, 4V1)
+        patron_linea = re.compile(r'^\d+[A-Za-z0-9]*$')
         
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=45000)
@@ -86,7 +88,6 @@ def extraer_todos_los_paraderos():
                         btn_salidas.click()
                         page.wait_for_timeout(2500)
                         
-                        # .last resuelve la violación del modo estricto apuntando al panel activo más reciente
                         panel_activo = page.locator("div[role='main']").last
                         texto_panel = panel_activo.inner_text()
                         
@@ -95,8 +96,9 @@ def extraer_todos_los_paraderos():
                         idx = 0
                         while idx < len(lineas_texto):
                             item = lineas_texto[idx]
-                            # Identifica si es el número de la micro/línea
-                            if item.isdigit() and len(item) <= 3:
+                            
+                            # Validación actualizada: acepta números y variantes con letras
+                            if patron_linea.match(item) and len(item) <= 6:
                                 linea_num = item
                                 destino = lineas_texto[idx + 1] if (idx + 1 < len(lineas_texto)) else "Sin destino"
                                 
@@ -115,7 +117,7 @@ def extraer_todos_los_paraderos():
                                         "hora": hora_encontrada
                                     })
                             idx += 1
-                            
+                        
                         print(f"     ¡Capturadas {len(salidas_programadas)} salidas programadas!")
                         
                         # Volver del Nivel 3 al Nivel 2
@@ -140,7 +142,6 @@ def extraer_todos_los_paraderos():
                         
                 except Exception as inner_ex:
                     print(f"Error en paradero {i + 1}: {inner_ex}")
-                    # En lugar de recargar la página, cerramos los paneles activos usando la tecla Escape o el botón 'Atrás'
                     page.keyboard.press("Escape")
                     page.wait_for_timeout(1500)
                     continue
