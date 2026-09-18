@@ -12,7 +12,6 @@ def extraer_todos_los_paraderos():
                 "--no-sandbox",
                 "--disable-setuid-sandbox",
                 "--disable-dev-shm-usage",
-                "--disable-infobars",
                 "--window-size=1280,720",
                 "--lang=es-CL"
             ]
@@ -21,19 +20,18 @@ def extraer_todos_los_paraderos():
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
             locale="es-CL",
-            viewport={"width": 1280, "height": 720},
-            extra_http_headers={"Accept-Language": "es-CL,es;q=0.9"}
+            viewport={"width": 1280, "height": 720}
         )
         
         context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         page = context.new_page()
         
-        url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs/@-36.6151805,-72.1325271,13z?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+        # Tip: Si buscas por cuadrículas/sectores (ej. "Parada de autobús Oriente Chillán"), superarás el límite de ~120 de Google.
+        url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs/@-36.6151805,-72.1325271,13z?entry=ttu"
         print("Conectando a Google Maps...")
         
         paraderos_totales = []
         patron_hora = re.compile(r'\b\d{1,2}:\d{2}(?:\s?[aApP]\.?\s?[mM]\.?)?\b')
-        # Regex para aceptar números solos o con letras (ej. 10, 13BV, 4V1)
         patron_linea = re.compile(r'^\d+[A-Za-z0-9]*$')
         
         try:
@@ -43,61 +41,77 @@ def extraer_todos_los_paraderos():
             try:
                 page.wait_for_selector("a.hfpxzc", state="visible", timeout=25000)
             except TimeoutError:
-                print("No se encontraron paraderos en la zona.")
+                print("No se encontraron paraderos.")
                 return
+
+            # =========================================================
+            # FASE 1: Scroll continuo e infinito para capturar URLs
+            # =========================================================
+            print("Cargando lista completa con scroll dinámico...")
             
-            # 1. Cargar la lista completa de paraderos con scroll (Nivel 1)
-            print("Cargando lista completa de paraderos...")
-            prev_count = 0
-            for _ in range(15):
+            intentos_sin_cambio = 0
+            urls_paraderos = []
+            
+            while intentos_sin_cambio < 5:
                 page.evaluate("""
                     const feed = document.querySelector('div[role="feed"]');
-                    if (feed) { feed.scrollBy(0, 1500); }
+                    if (feed) { feed.scrollBy(0, 3000); }
                 """)
-                page.wait_for_timeout(1000)
-                current_count = len(page.locator("a.hfpxzc").all())
-                if current_count == prev_count:
+                page.wait_for_timeout(1500)
+                
+                elementos = page.locator("a.hfpxzc").all()
+                nuevas_urls = [el.get_attribute("href") for el in elementos if el.get_attribute("href")]
+                
+                # Eliminar duplicados manteniendo orden
+                for u in nuevas_urls:
+                    if u not in urls_paraderos:
+                        urls_paraderos.append(u)
+                
+                print(f"Paraderos detectados hasta ahora: {len(urls_paraderos)}")
+                
+                # Comprobar si llegó al final explícito de Google Maps
+                texto_final = page.locator("text='Has llegado al final de la lista'").is_visible()
+                if texto_final:
+                    print("Se alcanzó el final de la lista de Google Maps.")
                     break
-                prev_count = current_count
-            
-            paradas = page.locator("a.hfpxzc").all()
-            print(f"=== TOTAL DE PARADAS A PROCESAR: {len(paradas)} ===")
-            
-            for i in range(len(paradas)):
-                try:
-                    paradas = page.locator("a.hfpxzc").all()
-                    if i >= len(paradas):
-                        break
-                        
-                    paradero_link = paradas[i]
-                    nombre_paradero = paradero_link.get_attribute("aria-label") or f"Paradero {i + 1}"
-                    print(f"\n[{i + 1}/{len(paradas)}] Entrando a: {nombre_paradero}")
                     
-                    # Clic para abrir ficha de paradero (Nivel 2)
-                    paradero_link.scroll_into_view_if_needed()
-                    paradero_link.click()
+                if len(nuevas_urls) == len(urls_paraderos):
+                    intentos_sin_cambio += 1
+                else:
+                    intentos_sin_cambio = 0
+
+            print(f"\n=== TOTAL DE URLS ÚNICAS ENCONTRADAS: {len(urls_paraderos)} ===")
+
+            # =========================================================
+            # FASE 2: Procesar cada paradero mediante navegación directa
+            # =========================================================
+            for i, url_paradero in enumerate(urls_paraderos):
+                try:
+                    print(f"\n[{i + 1}/{len(urls_paraderos)}] Navegando a paradero...")
+                    page.goto(url_paradero, wait_until="domcontentloaded", timeout=30000)
                     page.wait_for_timeout(2000)
+                    
+                    # Nombre del paradero
+                    h1 = page.locator("h1").first
+                    nombre_paradero = h1.inner_text() if h1.is_visible() else f"Paradero {i + 1}"
                     
                     salidas_programadas = []
                     
-                    # Localizar y presionar 'Ver el panel de salidas' (Nivel 2 -> Nivel 3)
+                    # Buscar el botón 'Ver el panel de salidas'
                     btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas')").first
                     
                     if btn_salidas.is_visible(timeout=3000):
-                        print("  -> Abriendo el 'Panel de salidas'...")
+                        print(f"  -> Extrayendo panel de salidas de: {nombre_paradero}")
                         btn_salidas.click()
-                        page.wait_for_timeout(2500)
+                        page.wait_for_timeout(2000)
                         
                         panel_activo = page.locator("div[role='main']").last
                         texto_panel = panel_activo.inner_text()
-                        
                         lineas_texto = [line.strip() for line in texto_panel.split('\n') if line.strip()]
                         
                         idx = 0
                         while idx < len(lineas_texto):
                             item = lineas_texto[idx]
-                            
-                            # Validación actualizada: acepta números y variantes con letras
                             if patron_linea.match(item) and len(item) <= 6:
                                 linea_num = item
                                 destino = lineas_texto[idx + 1] if (idx + 1 < len(lineas_texto)) else "Sin destino"
@@ -117,33 +131,16 @@ def extraer_todos_los_paraderos():
                                         "hora": hora_encontrada
                                     })
                             idx += 1
-                        
-                        print(f"     ¡Capturadas {len(salidas_programadas)} salidas programadas!")
-                        
-                        # Volver del Nivel 3 al Nivel 2
-                        btn_atras = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
-                        if btn_atras.is_visible(timeout=2000):
-                            btn_atras.click()
-                            page.wait_for_timeout(1000)
-                    else:
-                        print("  -> Este paradero no dispone de 'Panel de salidas'.")
-                        
+                        print(f"     ¡{len(salidas_programadas)} salidas capturadas!")
+                    
                     paraderos_totales.append({
                         "id": f"paradero_{i + 1}",
                         "nombre": nombre_paradero,
                         "salidas": salidas_programadas
                     })
-                    
-                    # Volver al Nivel 1 (Lista)
-                    btn_atras_principal = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
-                    if btn_atras_principal.is_visible(timeout=2000):
-                        btn_atras_principal.click()
-                        page.wait_for_timeout(1000)
-                        
+
                 except Exception as inner_ex:
-                    print(f"Error en paradero {i + 1}: {inner_ex}")
-                    page.keyboard.press("Escape")
-                    page.wait_for_timeout(1500)
+                    print(f"Error procesando paradero {i + 1}: {inner_ex}")
                     continue
 
         except Exception as e:
@@ -160,7 +157,7 @@ def extraer_todos_los_paraderos():
         with open("horarios_micros.json", "w", encoding="utf-8") as f:
             json.dump(resultado_final, f, ensure_ascii=False, indent=4)
             
-        print(f"\n¡Éxito! Se guardaron {len(paraderos_totales)} paraderos con sus horarios en horarios_micros.json.")
+        print(f"\n¡Proceso finalizado! Se guardaron {len(paraderos_totales)} paraderos.")
 
 if __name__ == "__main__":
     extraer_todos_los_paraderos()
