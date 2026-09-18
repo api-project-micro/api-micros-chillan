@@ -28,7 +28,7 @@ def extraer_todos_los_paraderos():
         context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         page = context.new_page()
         
-        url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs/@-36.6004151,-72.0997396,18z?entry=ttu"
+        url = "https://www.google.com/maps/search/Parada+de+autob%C3%BAs/@-36.6151805,-72.1325271,13z?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
         print("Conectando a Google Maps...")
         
         paraderos_totales = []
