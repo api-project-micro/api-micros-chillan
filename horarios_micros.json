@@ -1,6 +1,6 @@
 {
     "ciudad": "Chillán",
-    "actualizado_en": "2026-09-18 04:26 hrs",
+    "actualizado_en": "2026-09-18 04:38 hrs",
     "paraderos": [
         {
             "id": "paradero_1",
@@ -2105,137 +2105,6 @@
         },
         {
             "id": "paradero_20",
-            "nombre": "Av. Libertad esq. Av. Brasil",
-            "salidas": [
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:14 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:44 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:15 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "8:15 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:17 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:18 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:29 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "8:40 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:45 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:47 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:49 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "9:09 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:10 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:15 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "9:16 a.m."
-                },
-                {
-                    "linea": "Línea 2",
-                    "destino": "Sector Río Viejo",
-                    "hora": "9:16 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "9:17 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "9:18 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "9:29 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:30 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "9:33 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "9:36 a.m."
-                },
-                {
-                    "linea": "Línea 2",
-                    "destino": "Sector Río Viejo",
-                    "hora": "9:36 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "9:37 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:40 a.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_21",
             "nombre": "Av. Argentina esq. Av. España",
             "salidas": [
                 {
@@ -2362,6 +2231,137 @@
                     "linea": "Línea 7",
                     "destino": "Camino Parque Lantaño",
                     "hora": "9:21 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_21",
+            "nombre": "Av. Libertad esq. Av. Brasil",
+            "salidas": [
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:14 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:44 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:15 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "8:15 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:18 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:29 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "8:40 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:45 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:47 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:49 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "9:09 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "9:10 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:15 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "9:16 a.m."
+                },
+                {
+                    "linea": "Línea 2",
+                    "destino": "Sector Río Viejo",
+                    "hora": "9:16 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "9:17 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "9:18 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "9:29 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:30 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "9:33 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "9:36 a.m."
+                },
+                {
+                    "linea": "Línea 2",
+                    "destino": "Sector Río Viejo",
+                    "hora": "9:36 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "9:37 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "9:40 a.m."
                 }
             ]
         },
@@ -3798,137 +3798,6 @@
         },
         {
             "id": "paradero_33",
-            "nombre": "Av. Mariscal Ruíz esq. Pasaje 12",
-            "salidas": [
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:07 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:37 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:08 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:38 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:07 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:22 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:37 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:52 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "10:07 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "10:22 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "10:37 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "10:52 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "11:08 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "11:23 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "11:38 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "11:53 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "12:08 p.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "12:23 p.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "12:38 p.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "12:53 p.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "1:08 p.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "1:23 p.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "1:38 p.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "1:53 p.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "2:08 p.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_34",
             "nombre": "Longitudinal Sur esq. Universidad Pedro De Valdivia",
             "salidas": [
                 {
@@ -4055,6 +3924,137 @@
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
                     "hora": "1:34 p.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_34",
+            "nombre": "Av. Mariscal Ruíz esq. Pasaje 12",
+            "salidas": [
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:07 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:37 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:08 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:38 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:07 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:22 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:37 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:52 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:07 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:22 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:37 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:52 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "11:08 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "11:23 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "11:38 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "11:53 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "12:08 p.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "12:23 p.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "12:38 p.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "12:53 p.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "1:08 p.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "1:23 p.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "1:38 p.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "1:53 p.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "2:08 p.m."
                 }
             ]
         },
