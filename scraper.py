@@ -20,9 +20,13 @@ CUADRANTES = [
 ]
 
 def manejar_cookies(page):
-    """Cierra la ventana emergente de cookies si aparece."""
+    """Cierra la ventana emergente de cookies si aparece (incluye redirección de Google en CI/CD)."""
     try:
-        page.locator("button:has-text('Aceptar todo'), button:has-text('Accept all')").click(timeout=3000)
+        if "consent.google" in page.url:
+            page.locator("button:has-text('Aceptar todo'), button:has-text('Accept all')").first.click(timeout=5000)
+            page.wait_for_load_state("networkidle")
+        else:
+            page.locator("button:has-text('Aceptar todo'), button:has-text('Accept all')").click(timeout=3000)
     except Exception:
         pass
 
@@ -49,35 +53,25 @@ def hacer_scroll_completo(page):
             intentos = 0
             last_height = new_height
 
-def extraer_salidas_paradero(page):
-    """Extrae las salidas/horarios de micros dentro del detalle del paradero si están disponibles."""
-    salidas = []
-    try:
-        # Selector para las filas de líneas de transporte que muestra Google Maps
-        filas = page.locator('div[data-trip-id]').all()
-        for fila in filas:
-            linea = fila.locator('.fontBodyMedium').first.text_content() if fila.locator('.fontBodyMedium').count() > 0 else ""
-            destino = fila.locator('.fontBodySmall').first.text_content() if fila.locator('.fontBodySmall').count() > 0 else ""
-            hora = fila.locator('span:has-text("p.m."), span:has-text("a.m.")').first.text_content() if fila.locator('span:has-text("p.m."), span:has-text("a.m.")').count() > 0 else ""
-            
-            if linea or hora:
-                salidas.append({
-                    "linea": linea.strip(),
-                    "destino": destino.strip(),
-                    "hora": hora.strip()
-                })
-    except Exception:
-        pass
-    return salidas
-
 def ejecutar_scraper():
     paraderos_map = {}  # Diccionario para deduplicar automáticamente por URL
     
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        # Lanzamiento optimizado para GitHub Actions (Ubuntu Headless)
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                "--no-sandbox",
+                "--disable-setuid-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-blink-features=AutomationControlled"
+            ]
+        )
+        
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, Gecko) Chrome/120.0.0.0 Safari/537.36",
-            locale="es-419"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, Gecko) Chrome/122.0.0.0 Safari/537.36",
+            viewport={"width": 1280, "height": 800},
+            locale="es-CL"
         )
         page = context.new_page()
 
@@ -99,7 +93,7 @@ def ejecutar_scraper():
                 enlaces_paraderos = page.locator('a[href*="/maps/place/"]').all()
                 print(f"    - Encontrados en {sector}: {len(enlaces_paraderos)} tarjetas.")
 
-                for idx, enlace in enumerate(enlaces_paraderos):
+                for enlace in enlaces_paraderos:
                     url = enlace.get_attribute("href")
                     nombre = enlace.get_attribute("aria-label") or enlace.text_content()
 
@@ -117,7 +111,7 @@ def ejecutar_scraper():
                     paraderos_map[url_limpia] = {
                         "nombre": nombre.strip(),
                         "url": url,
-                        "salidas": []  # Se puede expandir haciendo click en el elemento si se requieren salidas en vivo
+                        "salidas": [] 
                     }
 
             except Exception as e:
