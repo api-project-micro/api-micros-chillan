@@ -1,6 +1,6 @@
 {
     "ciudad": "Chillán",
-    "actualizado_en": "2026-09-19 06:42 hrs",
+    "actualizado_en": "2026-09-19 07:05 hrs",
     "paraderos": [
         {
             "id": "paradero_1",
@@ -1460,137 +1460,6 @@
         },
         {
             "id": "paradero_15",
-            "nombre": "Av. Mariscal Ruiz De Gamboa esq. Cuatro Sur",
-            "salidas": [
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "7:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:04 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:24 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:56 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:04 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:08 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:20 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:24 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:32 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:45 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:55 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:59 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:05 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:14 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:15 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:25 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:29 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:35 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:54 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:59 a.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_16",
             "nombre": "Conde del Maule",
             "salidas": [
                 {
@@ -1717,6 +1586,137 @@
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
                     "hora": "11:26 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_16",
+            "nombre": "Av. Mariscal Ruiz De Gamboa esq. Cuatro Sur",
+            "salidas": [
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "7:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:04 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:24 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:56 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:04 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:08 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:20 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:24 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:32 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:45 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:55 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:59 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:05 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:14 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:15 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:25 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:29 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:35 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:54 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:59 a.m."
                 }
             ]
         },
@@ -3556,137 +3556,6 @@
         },
         {
             "id": "paradero_31",
-            "nombre": "Av. Francia esq. Porvenir",
-            "salidas": [
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "7:46 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "8:01 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "8:16 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "8:31 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "8:40 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "8:47 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "9:00 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "9:02 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "9:17 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "9:20 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "9:32 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "9:39 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "9:47 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "9:54 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "10:02 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "10:09 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "10:17 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "10:24 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "10:32 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "10:40 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "10:48 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "10:55 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "11:00 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "11:10 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "11:12 a.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_32",
             "nombre": "Barros Arana esq. Almirante Riveros",
             "salidas": [
                 {
@@ -3813,6 +3682,137 @@
                     "linea": "Línea 7",
                     "destino": "Camino Las Mariposas km 14",
                     "hora": "9:38 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_32",
+            "nombre": "Av. Francia esq. Porvenir",
+            "salidas": [
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "7:46 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "8:01 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "8:16 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "8:31 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "8:40 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "8:47 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "9:00 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "9:02 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "9:17 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "9:20 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "9:32 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "9:39 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "9:47 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "9:54 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "10:02 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "10:09 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "10:17 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "10:24 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "10:32 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "10:40 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "10:48 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "10:55 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "11:00 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "11:10 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "11:12 a.m."
                 }
             ]
         },
