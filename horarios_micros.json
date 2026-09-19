@@ -1,6 +1,6 @@
 {
     "ciudad": "Chillán",
-    "actualizado_en": "2026-09-19 08:05 hrs",
+    "actualizado_en": "2026-09-19 08:26 hrs",
     "paraderos": [
         {
             "id": "paradero_1",
@@ -674,107 +674,112 @@
         },
         {
             "id": "paradero_9",
-            "nombre": "Av. España esq. 7 Oriente",
+            "nombre": "Longitudinal Sur esq. Terminal De Buses Maria Teresa",
             "salidas": [
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "7:35 a.m."
+                    "hora": "7:25 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "7:55 a.m."
+                    "hora": "7:45 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:15 a.m."
+                    "hora": "8:05 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:35 a.m."
+                    "hora": "8:26 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:35 a.m."
+                    "hora": "8:26 a.m."
                 },
                 {
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
-                    "hora": "8:40 a.m."
+                    "hora": "8:29 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:50 a.m."
+                    "hora": "8:41 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:55 a.m."
+                    "hora": "8:46 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:05 a.m."
+                    "hora": "8:56 a.m."
                 },
                 {
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
-                    "hora": "9:10 a.m."
+                    "hora": "8:59 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:15 a.m."
+                    "hora": "9:06 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:20 a.m."
+                    "hora": "9:11 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:36 a.m."
+                    "hora": "9:26 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:37 a.m."
+                    "hora": "9:27 a.m."
                 },
                 {
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
-                    "hora": "9:40 a.m."
+                    "hora": "9:29 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:48 a.m."
+                    "hora": "9:38 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:52 a.m."
+                    "hora": "9:42 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "10:00 a.m."
+                    "hora": "9:50 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "10:07 a.m."
+                    "hora": "9:57 a.m."
                 },
                 {
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
-                    "hora": "10:10 a.m."
+                    "hora": "9:59 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "10:02 a.m."
                 },
                 {
                     "linea": "Línea 4",
@@ -784,27 +789,153 @@
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "10:22 a.m."
+                    "hora": "10:14 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "10:24 a.m."
+                    "hora": "10:27 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "10:37 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "10:38 a.m."
+                    "hora": "10:28 a.m."
                 }
             ]
         },
         {
             "id": "paradero_10",
+            "nombre": "Av. Bernardo O Higgins esq. Unimarc Chillan Viejo",
+            "salidas": [
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "8:05 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "9:05 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "9:05 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "9:25 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "9:35 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "9:45 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "10:05 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "10:06 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "10:26 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "10:35 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "10:46 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "11:05 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "11:06 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "11:26 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "11:35 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "11:46 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "12:05 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "12:06 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "12:26 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "12:35 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "12:46 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "1:05 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "1:06 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "1:26 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Huape",
+                    "hora": "1:35 p.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_11",
             "nombre": "Av. La Castilla esq. Siete Oriente",
             "salidas": [
                 {
@@ -935,7 +1066,7 @@
             ]
         },
         {
-            "id": "paradero_11",
+            "id": "paradero_12",
             "nombre": "Av. Francia esq. Padre Alberto Hurtado",
             "salidas": [
                 {
@@ -1066,244 +1197,108 @@
             ]
         },
         {
-            "id": "paradero_12",
-            "nombre": "Av. Libertad esq. 18 De Septiembre",
-            "salidas": [
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:16 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:17 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "7:22 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "7:30 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:37 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:46 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "7:47 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "7:50 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:57 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:10 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:17 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:17 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "8:17 a.m."
-                },
-                {
-                    "linea": "Línea 2",
-                    "destino": "Sector Río Viejo",
-                    "hora": "8:19 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:19 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:19 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "8:20 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:20 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:22 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:27 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:30 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:30 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:31 a.m."
-                },
-                {
-                    "linea": "Línea 2",
-                    "destino": "Sector Río Viejo",
-                    "hora": "8:34 a.m."
-                },
-                {
-                    "linea": "Línea 4V1",
-                    "destino": "Río Viejo",
-                    "hora": "8:34 a.m."
-                }
-            ]
-        },
-        {
             "id": "paradero_13",
-            "nombre": "Longitudinal Sur esq. Terminal De Buses Maria Teresa",
+            "nombre": "Av. España esq. 7 Oriente",
             "salidas": [
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "7:25 a.m."
+                    "hora": "7:35 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "7:45 a.m."
+                    "hora": "7:55 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:05 a.m."
+                    "hora": "8:15 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:26 a.m."
+                    "hora": "8:35 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:26 a.m."
+                    "hora": "8:35 a.m."
                 },
                 {
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
-                    "hora": "8:29 a.m."
+                    "hora": "8:40 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:41 a.m."
+                    "hora": "8:50 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:46 a.m."
+                    "hora": "8:55 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "8:56 a.m."
+                    "hora": "9:05 a.m."
                 },
                 {
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
-                    "hora": "8:59 a.m."
+                    "hora": "9:10 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:06 a.m."
+                    "hora": "9:15 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:11 a.m."
+                    "hora": "9:20 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:26 a.m."
+                    "hora": "9:36 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:27 a.m."
+                    "hora": "9:37 a.m."
                 },
                 {
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
-                    "hora": "9:29 a.m."
+                    "hora": "9:40 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:38 a.m."
+                    "hora": "9:48 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:42 a.m."
+                    "hora": "9:52 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:50 a.m."
+                    "hora": "10:00 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "9:57 a.m."
+                    "hora": "10:07 a.m."
                 },
                 {
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
-                    "hora": "9:59 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "10:02 a.m."
+                    "hora": "10:10 a.m."
                 },
                 {
                     "linea": "Línea 4",
@@ -1313,17 +1308,22 @@
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "10:14 a.m."
+                    "hora": "10:22 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "10:27 a.m."
+                    "hora": "10:24 a.m."
                 },
                 {
                     "linea": "Línea 4",
                     "destino": "Río Viejo",
-                    "hora": "10:28 a.m."
+                    "hora": "10:37 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "10:38 a.m."
                 }
             ]
         },
@@ -1591,6 +1591,268 @@
         },
         {
             "id": "paradero_16",
+            "nombre": "Av. Libertad esq. 18 De Septiembre",
+            "salidas": [
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:16 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:17 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "7:22 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "7:30 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:37 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:46 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "7:47 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "7:50 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:57 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:10 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 2",
+                    "destino": "Sector Río Viejo",
+                    "hora": "8:19 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:19 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:19 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "8:20 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:20 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:22 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:27 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:30 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:30 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:31 a.m."
+                },
+                {
+                    "linea": "Línea 2",
+                    "destino": "Sector Río Viejo",
+                    "hora": "8:34 a.m."
+                },
+                {
+                    "linea": "Línea 4V1",
+                    "destino": "Río Viejo",
+                    "hora": "8:34 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_17",
+            "nombre": "Constitución esq. Independencia",
+            "salidas": [
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:18 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "6:31 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:33 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:48 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:03 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:17 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:18 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:20 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:21 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "7:25 a.m."
+                },
+                {
+                    "linea": "Línea 4V1",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:25 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "7:27 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "7:28 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "7:28 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "7:30 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "7:31 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:33 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Parque Lantaño",
+                    "hora": "7:37 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:37 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Parque Lantaño",
+                    "hora": "7:39 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:41 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "7:42 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "7:45 a.m."
+                },
+                {
+                    "linea": "Línea 2V1",
+                    "destino": "Población Santa Elvira",
+                    "hora": "7:46 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "7:48 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_18",
             "nombre": "Central esq. 2 Oriente",
             "salidas": [
                 {
@@ -1717,268 +1979,6 @@
                     "linea": "Línea 4",
                     "destino": "Iansa - Frusur",
                     "hora": "8:51 a.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_17",
-            "nombre": "Av. Argentina esq. Av. España",
-            "salidas": [
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "6:16 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "6:28 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "6:31 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "6:46 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:01 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:16 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:16 a.m."
-                },
-                {
-                    "linea": "Línea 4V1",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:23 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "7:25 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:26 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:27 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:31 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:35 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:36 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:37 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:39 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "7:45 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:46 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:47 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:51 a.m."
-                },
-                {
-                    "linea": "Línea 4V1",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:53 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:56 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:57 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "8:01 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "8:03 a.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_18",
-            "nombre": "Av. Mariscal Ruíz esq- Av. Los Corregidores",
-            "salidas": [
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "7:42 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:02 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:22 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:42 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:43 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:54 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:03 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:06 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:18 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:23 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:30 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:43 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:43 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:53 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:58 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:03 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:13 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:13 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:23 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:28 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:33 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:42 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:43 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:53 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:57 a.m."
                 }
             ]
         },
@@ -2115,349 +2115,82 @@
         },
         {
             "id": "paradero_20",
-            "nombre": "Av. Bernardo O Higgins esq. Unimarc Chillan Viejo",
-            "salidas": [
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "8:05 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "9:05 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "9:05 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "9:25 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "9:35 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "9:45 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "10:05 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "10:06 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "10:26 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "10:35 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "10:46 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "11:05 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "11:06 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "11:26 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "11:35 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "11:46 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "12:05 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "12:06 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "12:26 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "12:35 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "12:46 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "1:05 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "1:06 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "1:26 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Huape",
-                    "hora": "1:35 p.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_21",
-            "nombre": "Constitución esq. Independencia",
-            "salidas": [
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "6:18 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "6:31 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "6:33 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "6:48 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:03 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:17 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:18 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:20 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:21 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "7:25 a.m."
-                },
-                {
-                    "linea": "Línea 4V1",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:25 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "7:27 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "7:28 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:28 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:30 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "7:31 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:33 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:37 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Iansa - Frusur",
-                    "hora": "7:37 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:39 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:41 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:42 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "7:45 a.m."
-                },
-                {
-                    "linea": "Línea 2V1",
-                    "destino": "Población Santa Elvira",
-                    "hora": "7:46 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "7:48 a.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_22",
-            "nombre": "Arturo Prat esq. Carrera",
+            "nombre": "Constitucion esq. Arauco",
             "salidas": [
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "7:20 a.m."
+                    "hora": "7:23 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "8:17 a.m."
+                    "hora": "8:20 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "8:21 a.m."
+                    "hora": "8:24 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "8:41 a.m."
+                    "hora": "8:44 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:01 a.m."
+                    "hora": "9:04 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:17 a.m."
+                    "hora": "9:20 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:21 a.m."
+                    "hora": "9:24 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:33 a.m."
+                    "hora": "9:36 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:37 a.m."
+                    "hora": "9:40 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:45 a.m."
+                    "hora": "9:48 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:57 a.m."
+                    "hora": "10:00 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:57 a.m."
+                    "hora": "10:00 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:09 a.m."
+                    "hora": "10:12 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:17 a.m."
+                    "hora": "10:20 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:21 a.m."
-                },
-                {
-                    "linea": "Línea 3",
-                    "destino": "Villa Emanuel",
-                    "hora": "10:33 a.m."
+                    "hora": "10:25 a.m."
                 },
                 {
                     "linea": "Línea 3",
@@ -2467,47 +2200,52 @@
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:45 a.m."
+                    "hora": "10:40 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:57 a.m."
+                    "hora": "10:49 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:57 a.m."
+                    "hora": "11:00 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:09 a.m."
+                    "hora": "11:01 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:17 a.m."
+                    "hora": "11:13 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:21 a.m."
+                    "hora": "11:20 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:33 a.m."
+                    "hora": "11:25 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
                     "hora": "11:37 a.m."
+                },
+                {
+                    "linea": "Línea 3",
+                    "destino": "Villa Emanuel",
+                    "hora": "11:40 a.m."
                 }
             ]
         },
         {
-            "id": "paradero_23",
+            "id": "paradero_21",
             "nombre": "Central esq. Cinco Poniente",
             "salidas": [
                 {
@@ -2638,138 +2376,269 @@
             ]
         },
         {
-            "id": "paradero_24",
-            "nombre": "Av. Libertad esq. Av. Brasil",
+            "id": "paradero_22",
+            "nombre": "Av. Mariscal Ruíz esq- Av. Los Corregidores",
             "salidas": [
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:14 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:15 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "7:20 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "7:28 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:35 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:44 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "7:45 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "7:48 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:55 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:08 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:15 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:15 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "7:42 a.m."
                 },
                 {
                     "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "8:15 a.m."
-                },
-                {
-                    "linea": "Línea 2",
-                    "destino": "Sector Río Viejo",
-                    "hora": "8:17 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:17 a.m."
-                },
-                {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:17 a.m."
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:02 a.m."
                 },
                 {
                     "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "8:17 a.m."
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:22 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:18 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:42 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:20 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:43 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:25 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:54 a.m."
                 },
                 {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:29 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:03 a.m."
                 },
                 {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:29 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:06 a.m."
                 },
                 {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:29 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:18 a.m."
                 },
                 {
-                    "linea": "Línea 2",
-                    "destino": "Sector Río Viejo",
-                    "hora": "8:32 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:23 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:32 a.m."
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:30 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:43 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:43 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:53 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:58 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:03 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:13 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:13 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:23 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:28 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:33 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:42 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:43 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:53 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:57 a.m."
                 }
             ]
         },
         {
-            "id": "paradero_25",
+            "id": "paradero_23",
+            "nombre": "Av. Argentina esq. Av. España",
+            "salidas": [
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:16 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "6:28 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:31 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:46 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:01 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:16 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:16 a.m."
+                },
+                {
+                    "linea": "Línea 4V1",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:23 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "7:25 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "7:26 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "7:27 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:31 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Parque Lantaño",
+                    "hora": "7:35 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:36 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Parque Lantaño",
+                    "hora": "7:37 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "7:39 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "7:45 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:46 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Parque Lantaño",
+                    "hora": "7:47 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "7:51 a.m."
+                },
+                {
+                    "linea": "Línea 4V1",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:53 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:56 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Parque Lantaño",
+                    "hora": "7:57 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:01 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Villa Barcelona",
+                    "hora": "8:03 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_24",
             "nombre": "Av. Alonso De Ercilla esq. Barros Arana",
             "salidas": [
                 {
@@ -2896,6 +2765,137 @@
                     "linea": "Línea 10",
                     "destino": "Villa Barcelona",
                     "hora": "8:52 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_25",
+            "nombre": "Av. Libertad esq. Av. Brasil",
+            "salidas": [
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:14 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:15 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "7:20 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "7:28 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:35 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:44 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "7:45 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "7:48 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:55 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:08 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:15 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:15 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "8:15 a.m."
+                },
+                {
+                    "linea": "Línea 2",
+                    "destino": "Sector Río Viejo",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:18 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:20 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:25 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:29 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:29 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:29 a.m."
+                },
+                {
+                    "linea": "Línea 2",
+                    "destino": "Sector Río Viejo",
+                    "hora": "8:32 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:32 a.m."
                 }
             ]
         },
@@ -3032,213 +3032,218 @@
         },
         {
             "id": "paradero_27",
-            "nombre": "Av. Libertad esq. Carrera",
+            "nombre": "Av. Collin esq. Arauco",
             "salidas": [
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:15 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:16 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "7:21 a.m."
-                },
-                {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "7:29 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:36 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:45 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "7:55 a.m."
                 },
                 {
                     "linea": "Línea 1",
                     "destino": "Villa San Sebastián",
-                    "hora": "7:46 a.m."
+                    "hora": "8:49 a.m."
                 },
                 {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "7:49 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "8:55 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:56 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "9:15 a.m."
                 },
                 {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:09 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "9:19 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:16 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "9:35 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:17 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "9:48 a.m."
                 },
                 {
-                    "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "8:17 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "9:56 a.m."
                 },
                 {
-                    "linea": "Línea 2",
-                    "destino": "Sector Río Viejo",
-                    "hora": "8:18 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "10:16 a.m."
                 },
                 {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:19 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "10:18 a.m."
                 },
                 {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:19 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "10:36 a.m."
                 },
                 {
-                    "linea": "Línea 8",
-                    "destino": "Av. Alonso de Ercilla 2787",
-                    "hora": "8:19 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "10:49 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:19 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "10:55 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:21 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "11:15 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:26 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "11:19 a.m."
                 },
                 {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:30 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "11:35 a.m."
                 },
                 {
-                    "linea": "Línea 4",
-                    "destino": "Río Viejo",
-                    "hora": "8:30 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "11:50 a.m."
                 },
                 {
-                    "linea": "Línea 14A",
-                    "destino": "Alto Ñuble",
-                    "hora": "8:31 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "11:58 a.m."
                 },
                 {
-                    "linea": "Línea 2",
-                    "destino": "Sector Río Viejo",
-                    "hora": "8:33 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "12:18 p.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Camino Las Mariposas",
-                    "hora": "8:33 a.m."
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "12:20 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "12:38 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "12:49 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "12:56 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "1:16 p.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
+                    "hora": "1:19 p.m."
                 }
             ]
         },
         {
             "id": "paradero_28",
-            "nombre": "Constitucion esq. Arauco",
+            "nombre": "Arturo Prat esq. Carrera",
             "salidas": [
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "7:23 a.m."
+                    "hora": "7:20 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "8:20 a.m."
+                    "hora": "8:17 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "8:24 a.m."
+                    "hora": "8:21 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "8:44 a.m."
+                    "hora": "8:41 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:04 a.m."
+                    "hora": "9:01 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:20 a.m."
+                    "hora": "9:17 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:24 a.m."
+                    "hora": "9:21 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:36 a.m."
+                    "hora": "9:33 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:40 a.m."
+                    "hora": "9:37 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "9:48 a.m."
+                    "hora": "9:45 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:00 a.m."
+                    "hora": "9:57 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:00 a.m."
+                    "hora": "9:57 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:12 a.m."
+                    "hora": "10:09 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:20 a.m."
+                    "hora": "10:17 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:25 a.m."
+                    "hora": "10:21 a.m."
+                },
+                {
+                    "linea": "Línea 3",
+                    "destino": "Villa Emanuel",
+                    "hora": "10:33 a.m."
                 },
                 {
                     "linea": "Línea 3",
@@ -3248,47 +3253,42 @@
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:40 a.m."
+                    "hora": "10:45 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "10:49 a.m."
+                    "hora": "10:57 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:00 a.m."
+                    "hora": "10:57 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:01 a.m."
+                    "hora": "11:09 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:13 a.m."
+                    "hora": "11:17 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:20 a.m."
+                    "hora": "11:21 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
-                    "hora": "11:25 a.m."
+                    "hora": "11:33 a.m."
                 },
                 {
                     "linea": "Línea 3",
                     "destino": "Villa Emanuel",
                     "hora": "11:37 a.m."
-                },
-                {
-                    "linea": "Línea 3",
-                    "destino": "Villa Emanuel",
-                    "hora": "11:40 a.m."
                 }
             ]
         },
@@ -3425,137 +3425,268 @@
         },
         {
             "id": "paradero_30",
-            "nombre": "Av. Circunvalación Oriente esq. Brisas Mediterráneas",
+            "nombre": "Av. Libertad esq. Carrera",
             "salidas": [
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "7:06 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:15 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "7:26 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:16 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "7:21 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "7:29 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:36 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:45 a.m."
+                },
+                {
+                    "linea": "Línea 1",
+                    "destino": "Villa San Sebastián",
                     "hora": "7:46 a.m."
                 },
                 {
-                    "linea": "Línea 13BV",
-                    "destino": "Universidad del Bío-Bío",
-                    "hora": "8:00 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "7:49 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:06 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:56 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:06 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:09 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
                     "hora": "8:16 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "8:17 a.m."
+                },
+                {
+                    "linea": "Línea 2",
+                    "destino": "Sector Río Viejo",
+                    "hora": "8:18 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:19 a.m."
+                },
+                {
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:19 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Av. Alonso de Ercilla 2787",
+                    "hora": "8:19 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:19 a.m."
+                },
+                {
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:21 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
                     "hora": "8:26 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:26 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:30 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:36 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:30 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:46 a.m."
+                    "linea": "Línea 14A",
+                    "destino": "Alto Ñuble",
+                    "hora": "8:31 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:46 a.m."
+                    "linea": "Línea 2",
+                    "destino": "Sector Río Viejo",
+                    "hora": "8:33 a.m."
                 },
                 {
-                    "linea": "Línea 14B",
-                    "destino": "Camino a San Bernardo km 3",
-                    "hora": "8:54 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:56 a.m."
-                },
-                {
-                    "linea": "Línea 13BV",
-                    "destino": "Universidad del Bío-Bío",
-                    "hora": "9:00 a.m."
-                },
-                {
-                    "linea": "Línea 13BV",
-                    "destino": "Universidad del Bío-Bío",
-                    "hora": "9:00 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:06 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:06 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:16 a.m."
-                },
-                {
-                    "linea": "Línea 13BV",
-                    "destino": "Universidad del Bío-Bío",
-                    "hora": "9:20 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:26 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:26 a.m."
-                },
-                {
-                    "linea": "Línea 13BV",
-                    "destino": "Universidad del Bío-Bío",
-                    "hora": "9:30 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:36 a.m."
-                },
-                {
-                    "linea": "Línea 13BV",
-                    "destino": "Universidad del Bío-Bío",
-                    "hora": "9:40 a.m."
+                    "linea": "Línea 10",
+                    "destino": "Camino Las Mariposas",
+                    "hora": "8:33 a.m."
                 }
             ]
         },
         {
             "id": "paradero_31",
+            "nombre": "Av. Los Puelches esq. Pasaje Sur",
+            "salidas": [
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "7:15 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "7:35 a.m."
+                },
+                {
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "7:36 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "7:55 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:14 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:15 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:25 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:34 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:35 a.m."
+                },
+                {
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "8:35 a.m."
+                },
+                {
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "8:36 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:45 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:54 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:55 a.m."
+                },
+                {
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "8:56 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:05 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:14 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:15 a.m."
+                },
+                {
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "9:16 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:25 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:34 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:35 a.m."
+                },
+                {
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "9:36 a.m."
+                },
+                {
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "9:37 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:45 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_32",
             "nombre": "Av. Francia esq. Porvenir",
             "salidas": [
                 {
@@ -3686,7 +3817,7 @@
             ]
         },
         {
-            "id": "paradero_32",
+            "id": "paradero_33",
             "nombre": "Barros Arana esq. Almirante Riveros",
             "salidas": [
                 {
@@ -3817,269 +3948,269 @@
             ]
         },
         {
-            "id": "paradero_33",
-            "nombre": "Av. Collin esq. Arauco",
-            "salidas": [
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "7:55 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "8:49 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "8:55 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:15 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:19 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:35 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:48 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:56 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:16 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:18 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:36 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:49 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:55 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:15 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:19 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:35 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:50 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:58 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:18 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:20 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:38 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:49 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:56 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "1:16 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "1:19 p.m."
-                }
-            ]
-        },
-        {
             "id": "paradero_34",
-            "nombre": "Av. Los Corregidores esq. Dos Poniente",
+            "nombre": "Av. Circunvalación Oriente esq. Brisas Mediterráneas",
             "salidas": [
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "8:39 a.m."
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "7:06 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "8:44 a.m."
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "7:26 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "7:46 a.m."
+                },
+                {
+                    "linea": "Línea 13BV",
+                    "destino": "Universidad del Bío-Bío",
+                    "hora": "8:00 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:06 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:06 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:16 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:26 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:26 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:36 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:46 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "8:46 a.m."
+                },
+                {
+                    "linea": "Línea 14B",
+                    "destino": "Camino a San Bernardo km 3",
+                    "hora": "8:54 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
                     "hora": "8:56 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "9:08 a.m."
+                    "linea": "Línea 13BV",
+                    "destino": "Universidad del Bío-Bío",
+                    "hora": "9:00 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "9:09 a.m."
+                    "linea": "Línea 13BV",
+                    "destino": "Universidad del Bío-Bío",
+                    "hora": "9:00 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:06 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:06 a.m."
+                },
+                {
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:16 a.m."
+                },
+                {
+                    "linea": "Línea 13BV",
+                    "destino": "Universidad del Bío-Bío",
                     "hora": "9:20 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "9:32 a.m."
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:26 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "9:39 a.m."
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:26 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "9:45 a.m."
+                    "linea": "Línea 13BV",
+                    "destino": "Universidad del Bío-Bío",
+                    "hora": "9:30 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "9:55 a.m."
+                    "linea": "Línea 14",
+                    "destino": "Lord Cochrane esquina Zañartu",
+                    "hora": "9:36 a.m."
                 },
                 {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "9:59 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:05 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:15 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:19 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:25 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:35 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:39 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:45 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:54 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "10:55 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "11:05 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "11:09 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "11:15 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "11:24 a.m."
-                },
-                {
-                    "linea": "Línea 6",
-                    "destino": "Islas del Sur",
-                    "hora": "11:25 a.m."
+                    "linea": "Línea 13BV",
+                    "destino": "Universidad del Bío-Bío",
+                    "hora": "9:40 a.m."
                 }
             ]
         },
         {
             "id": "paradero_35",
+            "nombre": "Av. Mariscal Ruíz esq. Pasaje 12",
+            "salidas": [
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:07 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:08 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:28 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:37 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:48 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:08 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:08 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:18 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:28 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:38 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:38 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:48 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:58 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:07 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:08 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:16 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:22 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:25 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:34 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:37 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:42 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:51 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:52 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:59 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:07 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_36",
             "nombre": "Longitudinal Sur esq. Universidad Pedro De Valdivia",
             "salidas": [
                 {
@@ -4210,264 +4341,133 @@
             ]
         },
         {
-            "id": "paradero_36",
-            "nombre": "Av. Collin esq. 18 De Septiembre",
-            "salidas": [
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "7:55 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "8:49 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "8:56 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:16 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:19 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:36 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:49 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "9:56 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:16 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:19 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:36 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:49 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "10:55 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:15 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:19 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:35 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:50 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "11:58 a.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:18 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:20 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:38 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:49 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "12:57 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "1:17 p.m."
-                },
-                {
-                    "linea": "Línea 1",
-                    "destino": "Villa San Sebastián",
-                    "hora": "1:19 p.m."
-                }
-            ]
-        },
-        {
             "id": "paradero_37",
-            "nombre": "Av. Los Puelches esq. Pasaje Sur",
+            "nombre": "Av. Alonso de Ercilla esq. Los Ángeles",
             "salidas": [
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "7:15 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:34 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "7:35 a.m."
-                },
-                {
-                    "linea": "Línea 13A",
-                    "destino": "Cerro Leon con El Nevado",
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
                     "hora": "7:36 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "7:55 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "7:56 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:14 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:04 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:15 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:16 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:25 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:34 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:35 a.m."
-                },
-                {
-                    "linea": "Línea 13A",
-                    "destino": "Cerro Leon con El Nevado",
-                    "hora": "8:35 a.m."
-                },
-                {
-                    "linea": "Línea 13A",
-                    "destino": "Cerro Leon con El Nevado",
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
                     "hora": "8:36 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:45 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:36 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:54 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "8:46 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "8:55 a.m."
-                },
-                {
-                    "linea": "Línea 13A",
-                    "destino": "Cerro Leon con El Nevado",
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
                     "hora": "8:56 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:05 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:06 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:14 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:06 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:15 a.m."
-                },
-                {
-                    "linea": "Línea 13A",
-                    "destino": "Cerro Leon con El Nevado",
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
                     "hora": "9:16 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:25 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:26 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:34 a.m."
-                },
-                {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:35 a.m."
-                },
-                {
-                    "linea": "Línea 13A",
-                    "destino": "Cerro Leon con El Nevado",
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
                     "hora": "9:36 a.m."
                 },
                 {
-                    "linea": "Línea 13A",
-                    "destino": "Cerro Leon con El Nevado",
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
                     "hora": "9:37 a.m."
                 },
                 {
-                    "linea": "Línea 14",
-                    "destino": "Lord Cochrane esquina Zañartu",
-                    "hora": "9:45 a.m."
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:46 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:51 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "9:54 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:03 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:06 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:11 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:20 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:21 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:29 a.m."
+                },
+                {
+                    "linea": "Línea 7",
+                    "destino": "Camino Las Mariposas km 14",
+                    "hora": "10:36 a.m."
                 }
             ]
         },
@@ -4604,263 +4604,263 @@
         },
         {
             "id": "paradero_39",
-            "nombre": "Barros Arana esq. Barros Arana",
+            "nombre": "Longitudinal Sur esq. Pedro San Martin",
             "salidas": [
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "6:26 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:27 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:24 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:42 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:25 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "6:57 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:33 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:12 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:26 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:27 a.m."
+                },
+                {
+                    "linea": "Línea 4V1",
+                    "destino": "Iansa - Frusur",
                     "hora": "7:35 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:37 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:42 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:45 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:46 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "7:49 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "7:57 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "7:55 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "8:01 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "8:03 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
+                    "linea": "Línea 4V1",
+                    "destino": "Iansa - Frusur",
                     "hora": "8:05 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "8:13 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:06 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "8:15 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:12 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "8:24 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:26 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "8:25 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:27 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "8:25 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "8:34 a.m."
-                },
-                {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
+                    "linea": "Línea 4V1",
+                    "destino": "Iansa - Frusur",
                     "hora": "8:35 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "8:36 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:38 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "8:39 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:42 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "8:45 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:50 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "8:46 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "8:57 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Parque Lantaño",
-                    "hora": "8:49 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "9:02 a.m."
                 },
                 {
-                    "linea": "Línea 10",
-                    "destino": "Villa Barcelona",
-                    "hora": "8:54 a.m."
+                    "linea": "Línea 4V1",
+                    "destino": "Iansa - Frusur",
+                    "hora": "9:05 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "9:12 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "9:14 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Iansa - Frusur",
+                    "hora": "9:26 a.m."
                 }
             ]
         },
         {
             "id": "paradero_40",
-            "nombre": "Av. Mariscal Ruíz esq. Pasaje 12",
+            "nombre": "Av. Los Puelches esq. Cordillera",
             "salidas": [
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:07 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:08 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:28 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
                     "hora": "7:37 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "7:48 a.m."
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "7:37 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:08 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "7:57 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:08 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:17 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:18 a.m."
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "8:36 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:28 a.m."
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "8:37 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:38 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:37 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:38 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:37 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:48 a.m."
+                    "linea": "Línea 4V1",
+                    "destino": "Río Viejo",
+                    "hora": "8:42 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "8:58 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:52 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "8:57 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "8:57 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
                     "hora": "9:07 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:08 a.m."
+                    "linea": "Línea 4V1",
+                    "destino": "Río Viejo",
+                    "hora": "9:12 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:16 a.m."
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "9:17 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "9:17 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
                     "hora": "9:22 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:25 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:34 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
                     "hora": "9:37 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "9:38 a.m."
+                },
+                {
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "9:39 a.m."
+                },
+                {
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "9:39 a.m."
+                },
+                {
+                    "linea": "Línea 4V1",
+                    "destino": "Río Viejo",
                     "hora": "9:42 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:51 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "9:50 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:52 a.m."
+                    "linea": "Línea 13A",
+                    "destino": "Cerro Leon con El Nevado",
+                    "hora": "9:54 a.m."
                 },
                 {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "9:59 a.m."
-                },
-                {
-                    "linea": "Línea 7",
-                    "destino": "Camino Las Mariposas km 14",
-                    "hora": "10:07 a.m."
+                    "linea": "Línea 4",
+                    "destino": "Río Viejo",
+                    "hora": "9:54 a.m."
                 }
             ]
         }
