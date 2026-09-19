@@ -4,7 +4,6 @@ from datetime import datetime
 from urllib.parse import quote
 from playwright.sync_api import sync_playwright
 
-# 1. Definición de cuadrantes / sectores de Chillán
 CUADRANTES = [
     "Centro",
     "Doña Francisca",
@@ -19,9 +18,9 @@ CUADRANTES = [
 ]
 
 def manejar_cookies(page):
-    """Cierra la ventana emergente de cookies o redirección de Google."""
     try:
         if "consent.google" in page.url:
+            print("    [!] Pantalla de cookies detectada. Intentando aceptar...")
             page.locator("button:has-text('Aceptar todo'), button:has-text('Accept all')").first.click(timeout=5000)
             page.wait_for_load_state("networkidle")
         else:
@@ -30,34 +29,26 @@ def manejar_cookies(page):
         pass
 
 def hacer_scroll_completo(page):
-    """Hace scroll dentro del panel lateral role='feed' hasta cargar todas las paradas del sector."""
     try:
         panel_results = page.locator('div[role="feed"]')
         if panel_results.count() == 0:
             return
 
         last_height = 0
-        intentos = 0
-        max_intentos = 3
-
-        while intentos < max_intentos:
+        for _ in range(3):
             panel_results.evaluate("el => el.scrollTop = el.scrollHeight")
             time.sleep(2.0)
-            
             new_height = panel_results.evaluate("el => el.scrollHeight")
             if new_height == last_height:
-                intentos += 1
-            else:
-                intentos = 0
-                last_height = new_height
+                break
+            last_height = new_height
     except Exception:
         pass
 
 def ejecutar_scraper():
-    paraderos_map = {}  # Diccionario para deduplicar por URL limpia
+    paraderos_map = {}
     
     with sync_playwright() as p:
-        # Lanzamiento optimizado para GitHub Actions (Ubuntu Headless)
         browser = p.chromium.launch(
             headless=True,
             args=[
@@ -69,9 +60,11 @@ def ejecutar_scraper():
         )
         
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, Gecko) Chrome/122.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
             viewport={"width": 1280, "height": 800},
-            locale="es-CL"
+            locale="es-CL",
+            geolocation={"longitude": -72.1013534, "latitude": -36.6104272}, # Coordenadas de Chillán
+            permissions=["geolocation"]
         )
         page = context.new_page()
 
@@ -83,36 +76,42 @@ def ejecutar_scraper():
             print(f"\n[+] Buscando en cuadrante: {sector}...")
 
             try:
-                page.goto(url_busqueda, wait_until="domcontentloaded", timeout=35000)
-                page.wait_for_timeout(4000)
+                page.goto(url_busqueda, wait_until="networkidle", timeout=35000)
                 manejar_cookies(page)
                 
-                # Cargar todos los elementos del panel lateral
+                print(f"    - URL actual: {page.url}")
+                print(f"    - Título de la página: {page.title()}")
+
+                try:
+                    page.wait_for_selector('div[role="feed"], a[href*="/maps/place/"]', timeout=8000)
+                except Exception:
+                    print("    [!] El feed de resultados no cargó a tiempo.")
+
                 hacer_scroll_completo(page)
 
-                # Obtener tarjetas de resultados de Google Maps
                 enlaces_paraderos = page.locator('a.hfpxzc, a[href*="/maps/place/"]').all()
                 print(f"    - Encontrados en {sector}: {len(enlaces_paraderos)} tarjetas.")
+
+                # Si encuentra 0 resultados, guarda una captura para análisis
+                if len(enlaces_paraderos) == 0:
+                    foto_path = f"debug_{sector.replace(' ', '_')}.png"
+                    page.screenshot(path=foto_path)
+                    print(f"    [!] Captura guardada como {foto_path} para inspeccionar.")
 
                 for enlace in enlaces_paraderos:
                     try:
                         url = enlace.get_attribute("href")
                         nombre = enlace.get_attribute("aria-label") or enlace.inner_text()
-
                         if not url or not nombre or len(nombre.strip()) < 3:
                             continue
-
+                        
                         url_limpia = url.split("?")[0]
-
-                        if url_limpia in paraderos_map:
-                            continue
-
-                        # Estructura base del paradero
-                        paraderos_map[url_limpia] = {
-                            "nombre": nombre.strip().split("\n")[0],
-                            "url": url,
-                            "salidas": [] 
-                        }
+                        if url_limpia not in paraderos_map:
+                            paraderos_map[url_limpia] = {
+                                "nombre": nombre.strip().split("\n")[0],
+                                "url": url,
+                                "salidas": [] 
+                            }
                     except Exception:
                         continue
 
@@ -121,29 +120,23 @@ def ejecutar_scraper():
 
         browser.close()
 
-    # 2. Formatear la lista final con IDs secuenciales
     lista_paraderos = []
     for index, (url_key, datos) in enumerate(paraderos_map.items(), start=1):
         datos["id"] = f"paradero_{index}"
         lista_paraderos.append(datos)
 
-    # 3. Construir la estructura final del JSON
-    fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M hrs")
     resultado_final = {
         "ciudad": "Chillán",
-        "actualizado_en": fecha_actual,
+        "actualizado_en": datetime.now().strftime("%Y-%m-%d %H:%M hrs"),
         "paraderos_totales_registrados": len(lista_paraderos),
         "paraderos": lista_paraderos
     }
 
-    # 4. Guardar en el archivo horarios_micros.json
-    archivo_destino = "horarios_micros.json"
-    with open(archivo_destino, "w", encoding="utf-8") as f:
+    with open("horarios_micros.json", "w", encoding="utf-8") as f:
         json.dump(resultado_final, f, ensure_ascii=False, indent=4)
 
     print(f"\n[✔] Proceso finalizado exitosamente.")
     print(f"[✔] Total de paraderos únicos registrados: {len(lista_paraderos)}")
-    print(f"[✔] Archivo generado: {archivo_destino}")
 
 if __name__ == "__main__":
     ejecutar_scraper()
