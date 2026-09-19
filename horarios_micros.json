@@ -1,6 +1,6 @@
 {
     "ciudad": "Chillán",
-    "actualizado_en": "2026-09-19 06:29 hrs",
+    "actualizado_en": "2026-09-19 06:42 hrs",
     "paraderos": [
         {
             "id": "paradero_1",
@@ -1329,137 +1329,6 @@
         },
         {
             "id": "paradero_14",
-            "nombre": "Av. Mariscal Ruiz De Gamboa esq. Cuatro Sur",
-            "salidas": [
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "7:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:04 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:24 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "8:56 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:04 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:08 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:20 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:24 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:32 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:45 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:55 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "9:59 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:05 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:14 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:15 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:25 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:29 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:35 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:44 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:54 a.m."
-                },
-                {
-                    "linea": "Línea 8",
-                    "destino": "Del Rosario esquina Angel Parra",
-                    "hora": "10:59 a.m."
-                }
-            ]
-        },
-        {
-            "id": "paradero_15",
             "nombre": "Av. Libertad esq. 18 De Septiembre",
             "salidas": [
                 {
@@ -1586,6 +1455,137 @@
                     "linea": "Línea 4V1",
                     "destino": "Río Viejo",
                     "hora": "8:34 a.m."
+                }
+            ]
+        },
+        {
+            "id": "paradero_15",
+            "nombre": "Av. Mariscal Ruiz De Gamboa esq. Cuatro Sur",
+            "salidas": [
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "7:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:04 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:24 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "8:56 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:04 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:08 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:20 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:24 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:32 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:45 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:55 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "9:59 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:05 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:14 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:15 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:25 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:29 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:35 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:44 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:54 a.m."
+                },
+                {
+                    "linea": "Línea 8",
+                    "destino": "Del Rosario esquina Angel Parra",
+                    "hora": "10:59 a.m."
                 }
             ]
         },
