@@ -1,6 +1,42 @@
 {
-    "ciudad": "Chillán",
-    "actualizado_en": "2026-09-20 01:34 hrs",
-    "paraderos_totales_registrados": 0,
-    "paraderos": []
+    "Centro": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Centro%20Chillan"
+    },
+    "Doña Francisca": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Do%C3%B1a%20Francisca%20Chillan"
+    },
+    "Las Termas": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Las%20Termas%20Chillan"
+    },
+    "Sol de Oriente": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Sol%20de%20Oriente%20Chillan"
+    },
+    "Ultraestación": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Ultraestacion%20Chillan"
+    },
+    "Vicente Méndez": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Vicente%20Mendez%20Chillan"
+    },
+    "Río Viejo": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Rio%20Viejo%20Chillan"
+    },
+    "Los Volcanes": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Los%20Volcanes%20Chillan"
+    },
+    "Santa Elvira": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Santa%20Elvira%20Chillan"
+    },
+    "Parque Los Alerces": {
+        "estado": "OK",
+        "url": "https://www.google.com/maps/search/parada%20de%20autobus%20Parque%20Los%20Alerces%20Chillan"
+    }
 }
