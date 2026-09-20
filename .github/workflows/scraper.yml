@@ -1,44 +1,42 @@
 name: Actualizador de Horarios de Micros
 
-# ¿Cuándo se ejecutará esto?
 on:
+  workflow_dispatch: # Permite ejecutarlo manualmente desde la pestaña Actions
   schedule:
-    # Se ejecuta cada 15 minutos. 
-    # (Nota: GitHub recomienda no bajar de 15 mins para evitar cuellos de botella)
-    - cron: '*/15 * * * *'
-  workflow_dispatch: # Este botón te permite ejecutarlo manualmente desde GitHub
+    - cron: '0 8 * * *' # Se ejecuta todos los días a las 8:00 AM (opcional)
 
 jobs:
   ejecutar-scraper:
-    runs-on: ubuntu-latest # Una máquina virtual gratis con 7GB de RAM
-
+    runs-on: ubuntu-latest
+    
     steps:
-    - name: 📥 Descargar el repositorio
-      uses: actions/checkout@v4
+      - name: 1. Clonar repositorio
+        uses: actions/checkout@v4
 
-    - name: 🐍 Configurar Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
+      - name: 2. Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    - name: 📦 Instalar dependencias y Playwright
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        # Instala los navegadores necesarios (Chromium) con sus dependencias de sistema
-        python -m playwright install chromium --with-deps
+      - name: 3. Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          playwright install chromium
 
-    - name: 🚀 Ejecutar Scraper de Google Maps
-      run: python scraper.py
+      - name: 4. Ejecutar Scraper
+        run: python scraper.py
 
-    - name: 💾 Guardar el JSON actualizado en el repositorio
-      run: |
-        # Configuramos un bot para hacer el commit
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        
-        # Solo agregamos el archivo JSON (ignoramos las imágenes para no llenar el repo)
-        git add horarios_micros.json
-        
-        # Comprobamos si el JSON tuvo cambios. Si hubo, hacemos commit y push.
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática: horarios de micros" && git push)
+      - name: 5. Guardar capturas de depuración si falla
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screenshots-debug
+          path: debug_*.png
+
+      - name: 6. Guardar el JSON actualizado en el repositorio
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add horarios_micros.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática de horarios [skip ci]" && git push)
