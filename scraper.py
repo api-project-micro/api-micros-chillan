@@ -3,18 +3,18 @@ import re
 from datetime import datetime
 from playwright.sync_api import sync_playwright, TimeoutError
 
-# 10 Cuadrantes / Sectores en Chillán
+# Enlaces explícitos formateados con búsqueda focalizada en Chillán y coordenadas GPS
 ENLACES_SECTORES = {
-    "Centro": "https://www.google.com/maps/search/parada%20de%20autobus%20Centro%20Chillan",
-    "Doña Francisca": "https://www.google.com/maps/search/parada%20de%20autobus%20Do%C3%B1a%20Francisca%20Chillan",
-    "Las Termas": "https://www.google.com/maps/search/parada%20de%20autobus%20Las%20Termas%20Chillan",
-    "Sol de Oriente": "https://www.google.com/maps/search/parada%20de%20autobus%20Sol%20de%20Oriente%20Chillan",
-    "Ultraestación": "https://www.google.com/maps/search/parada%20de%20autobus%20Ultraestacion%20Chillan",
-    "Vicente Méndez": "https://www.google.com/maps/search/parada%20de%20autobus%20Vicente%20Mendez%20Chillan",
-    "Río Viejo": "https://www.google.com/maps/search/parada%20de%20autobus%20Rio%20Viejo%20Chillan",
-    "Los Volcanes": "https://www.google.com/maps/search/parada%20de%20autobus%20Los%20Volcanes%20Chillan",
-    "Santa Elvira": "https://www.google.com/maps/search/parada%20de%20autobus%20Santa%20Elvira%20Chillan",
-    "Parque Los Alerces": "https://www.google.com/maps/search/parada%20de%20autobus%20Parque%20Los%20Alerces%20Chillan"
+    "Centro": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Centro,+Chill%C3%A1n,+Chile/@-36.6063,-72.1023,15z/data=!3m1!4b1?entry=ttu",
+    "Doña Francisca": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Dona+Francisca,+Chill%C3%A1n,+Chile/@-36.6212,-72.0725,15z/data=!3m1!4b1?entry=ttu",
+    "Las Termas": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Las+Termas,+Chill%C3%A1n,+Chile/@-36.6201,-72.0834,15z/data=!3m1!4b1?entry=ttu",
+    "Sol de Oriente": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Sol+de+Oriente,+Chill%C3%A1n,+Chile/@-36.6134,-72.0712,15z/data=!3m1!4b1?entry=ttu",
+    "Ultraestación": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Ultraestacion,+Chill%C3%A1n,+Chile/@-36.6045,-72.1156,15z/data=!3m1!4b1?entry=ttu",
+    "Vicente Méndez": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Vicente+Mendez,+Chill%C3%A1n,+Chile/@-36.5898,-72.0881,15z/data=!3m1!4b1?entry=ttu",
+    "Río Viejo": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+rio+viejo,+Chill%C3%A1n,+Chile/@-36.6369505,-72.0823686,15z/data=!3m1!4b1?entry=ttu",
+    "Los Volcanes": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Los+Volcanes,+Chill%C3%A1n,+Chile/@-36.6189,-72.0623,15z/data=!3m1!4b1?entry=ttu",
+    "Santa Elvira": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Santa+Elvira,+Chill%C3%A1n,+Chile/@-36.5921,-72.1089,15z/data=!3m1!4b1?entry=ttu",
+    "Parque Los Alerces": "https://www.google.com/maps/search/parada+de+autobus+cerca+de+Parque+Los+Alerces,+Chill%C3%A1n,+Chile/@-36.6312,-72.0890,15z/data=!3m1!4b1?entry=ttu"
 }
 
 def ejecutar_scraper():
@@ -34,6 +34,8 @@ def ejecutar_scraper():
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
             locale="es-CL",
+            geolocation={"latitude": -36.6063, "longitude": -72.1023},
+            permissions=["geolocation"],
             viewport={"width": 1280, "height": 720},
             extra_http_headers={"Accept-Language": "es-CL,es;q=0.9"}
         )
@@ -42,7 +44,7 @@ def ejecutar_scraper():
         page = context.new_page()
         
         patron_hora = re.compile(r'\b\d{1,2}:\d{2}(?:\s?[aApP]\.?\s?[mM]\.?)?\b')
-        patron_linea = re.compile(r'^\d+[A-Za-z]?$')  # Acepta números (4) o alfanuméricos (2A)
+        patron_linea = re.compile(r'^\d+[A-Za-z]?$')
         
         paraderos_totales = []
         nombres_procesados = set()
@@ -54,25 +56,27 @@ def ejecutar_scraper():
             
             try:
                 page.goto(url, wait_until="domcontentloaded", timeout=45000)
-                page.wait_for_timeout(3000)
+                page.wait_for_timeout(4000)
                 
-                # Aceptar cookies si aparece el botón
+                # Aceptar aviso de cookies si aparece
                 try:
-                    btn_cookie = page.locator("button:has-text('Aceptar todo'), button:has-text('Accept all')").first
-                    if btn_cookie.is_visible(timeout=2000):
+                    btn_cookie = page.locator("button:has-text('Aceptar todo'), button:has-text('Accept all'), form[action*='consent'] button").first
+                    if btn_cookie.is_visible(timeout=3000):
                         btn_cookie.click()
-                        page.wait_for_timeout(1000)
+                        page.wait_for_timeout(1500)
                 except Exception:
                     pass
                 
-                # Esperar a que aparezcan los resultados
+                # Esperar a que cargue la lista de paraderos
                 try:
-                    page.wait_for_selector("a.hfpxzc", state="visible", timeout=15000)
+                    page.wait_for_selector("a.hfpxzc", state="visible", timeout=20000)
                 except TimeoutError:
-                    print(f"No se encontraron paraderos en el sector {sector}.")
+                    print(f"No se encontraron paraderos en {sector}.")
+                    slug = sector.lower().replace(' ', '_').replace('ñ', 'n')
+                    page.screenshot(path=f"debug_{slug}.png")
                     continue
                 
-                # Hacer scroll en el panel izquierdo para cargar la lista completa
+                # Scroll para cargar la lista completa
                 prev_count = 0
                 for _ in range(8):
                     page.evaluate("""
@@ -97,14 +101,12 @@ def ejecutar_scraper():
                         paradero_link = paradas[i]
                         nombre_paradero = paradero_link.get_attribute("aria-label") or f"Paradero {len(paraderos_totales) + 1}"
                         
-                        # Omitir si ya fue procesado en otro sector
                         if nombre_paradero in nombres_procesados:
                             continue
                         
                         nombres_procesados.add(nombre_paradero)
                         print(f"  [{len(paraderos_totales) + 1}] Entrando a: {nombre_paradero}")
                         
-                        # Abrir la ficha del paradero
                         paradero_link.scroll_into_view_if_needed()
                         paradero_link.click()
                         page.wait_for_timeout(2000)
@@ -112,7 +114,6 @@ def ejecutar_scraper():
                         salidas_programadas = []
                         btn_salidas = page.locator("button:has-text('Ver el panel de salidas'), div[role='button']:has-text('Ver el panel de salidas')").first
                         
-                        # Abrir el panel de salidas si está disponible
                         if btn_salidas.is_visible(timeout=3000):
                             btn_salidas.click()
                             page.wait_for_timeout(2000)
@@ -144,15 +145,14 @@ def ejecutar_scraper():
                                         })
                                 idx += 1
                                 
-                            print(f"     -> Se capturaron {len(salidas_programadas)} salidas programadas.")
+                            print(f"     -> Capturadas {len(salidas_programadas)} salidas.")
                             
-                            # Volver al detalle del paradero
                             btn_atras = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
                             if btn_atras.is_visible(timeout=2000):
                                 btn_atras.click()
                                 page.wait_for_timeout(1000)
                         else:
-                            print("     -> Este paradero no dispone de 'Panel de salidas'.")
+                            print("     -> Sin panel de salidas.")
                             
                         paraderos_totales.append({
                             "id": f"paradero_{len(paraderos_totales) + 1}",
@@ -161,7 +161,6 @@ def ejecutar_scraper():
                             "salidas": salidas_programadas
                         })
                         
-                        # Volver a la lista del sector
                         btn_atras_principal = page.locator("button[aria-label*='Atrás'], button[aria-label*='Volver']").first
                         if btn_atras_principal.is_visible(timeout=2000):
                             btn_atras_principal.click()
@@ -178,7 +177,6 @@ def ejecutar_scraper():
 
         browser.close()
 
-        # Guardar resultados
         resultado_final = {
             "ciudad": "Chillán",
             "actualizado_en": datetime.now().strftime("%Y-%m-%d %H:%M hrs"),
